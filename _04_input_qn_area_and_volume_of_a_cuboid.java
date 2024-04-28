@@ -9,7 +9,7 @@
 
 import java.util.*;
 
-class Area_and_volume_of_a_Cuboid
+class _04_input_qn_area_and_volume_of_a_cuboid
 {
 	public static void main (String args[])
 	{

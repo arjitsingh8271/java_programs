@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*;
 
-class Area_of_a_Triangle
+class _04_input_qn_area_of_a_triangle
 {
 	public static void main (String args[])
 	{
