@@ -1,6 +1,6 @@
 class variables
 {
-	public static void main(String args[]) //(String[] args)
+	public static void main(String[] args) //(String[] args)
 	{
 		/*
 		In Java:

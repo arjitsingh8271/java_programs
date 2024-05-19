@@ -23,7 +23,7 @@ class A
 
 class oops_1_09_access_modifiers
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		A a = new A();
 		

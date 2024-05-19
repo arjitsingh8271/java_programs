@@ -2,7 +2,7 @@ import java.util.*;
 
 class array_1d_03_input_output_usign_loop
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		Scanner s = new Scanner(System.in);
 

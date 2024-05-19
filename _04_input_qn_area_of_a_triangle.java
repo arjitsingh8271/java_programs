@@ -3,7 +3,7 @@ import java.lang.*;
 
 class _04_input_qn_area_of_a_triangle
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		/*   Using base & hight
 		     Formula:  Area = 1/2 * base * height

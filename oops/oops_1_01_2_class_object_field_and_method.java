@@ -17,7 +17,7 @@ class A
 
 class oops_1_01_2_class_object_field_and_method
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		A a = new A();
 		a.lightOn();		// Light is on true

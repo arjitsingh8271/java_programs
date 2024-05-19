@@ -21,7 +21,7 @@ class A
 
 class oops_1_10_1_this_keyword
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		A a = new A(55);
 		System.out.println(a);	// A@3764951d

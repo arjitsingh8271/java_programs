@@ -42,7 +42,7 @@ class A
 
 class oops_1_04_constructor
 {
-	public static void main (String arg[])
+	public static void main (String[] args)
 	{
 		A a = new A();		// Constructor Called 1
 		A b = new A();		// Constructor Called 2

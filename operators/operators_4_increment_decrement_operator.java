@@ -2,7 +2,7 @@
 
 class operators_4_increment_decrement_operator
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int a=4;
 

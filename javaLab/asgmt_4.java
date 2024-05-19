@@ -69,7 +69,7 @@ class Triangle implements Shape
 // Main class
 class asgmt_4
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		// Creating instances of different shapes
 		Shape circle = new Circle(2.5);

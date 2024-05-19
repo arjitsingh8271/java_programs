@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 class Arrays_QN_sort_function_asc_order
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int arr[] = {3, 5, 1, 4, 2};
 

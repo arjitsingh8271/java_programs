@@ -11,7 +11,7 @@ import java.util.*;
 
 class _04_input_qn_area_and_volume_of_a_cuboid
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		float length,breadth,height;
 		float area,volume;

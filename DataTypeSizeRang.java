@@ -2,7 +2,7 @@ import java.lang.*;
 
 class DataTypeSizeRang
 {
-	public static void main(String args[])                        // Default
+	public static void main(String[] args)                        // Default
 	{
 		System.out.println("Int Min: " + Integer.MIN_VALUE);      // 0
 		System.out.println("Int Max: " + Integer.MAX_VALUE);

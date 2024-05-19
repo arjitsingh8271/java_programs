@@ -14,7 +14,7 @@ class array_1d_QN_remove_an_element_by_its_position
 
 	}
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		Scanner s = new Scanner(System.in);
 		int arr[] = {4, 2, 3, 1, 5};

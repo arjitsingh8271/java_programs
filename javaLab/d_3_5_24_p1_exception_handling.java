@@ -1,4 +1,4 @@
-class d_3_5_24_p1
+class d_3_5_24_p1_exception_handling
 {
 	public static void main(String args[])
 	{

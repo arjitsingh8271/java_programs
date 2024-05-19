@@ -2,7 +2,7 @@
 
 class print_all_letter
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		// char x=0x03A8;
 		// System.out.println(x);

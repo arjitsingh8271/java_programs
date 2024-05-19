@@ -28,7 +28,7 @@ class Student
 
 class oops_1_10_2_setter_and_getter_methods
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		Student s1 = new Student();
 

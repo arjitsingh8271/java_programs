@@ -15,7 +15,7 @@ import java.util.*;
 
 class Roots_of_Quadratic_Equation
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		int a,b,c;
 		double r1, r2;

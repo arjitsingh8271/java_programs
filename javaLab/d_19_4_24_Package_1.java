@@ -19,3 +19,4 @@ class d_19_4_24_Package_1
 		ab.fun_div(2,5);
 	}
 }
+

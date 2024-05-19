@@ -8,7 +8,7 @@ class oops_1_02_object_inside_same_class
 		System.out.println("Hello");
 	}
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		oops_1_object_inside_same_class a = new oops_1_object_inside_same_class();
 
@@ -32,7 +32,7 @@ class oops_1_02_object_inside_same_class
 		System.out.println("Hello");
 	}
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{	
 		System.out.println(num);	// 5
 		display();					// Hello

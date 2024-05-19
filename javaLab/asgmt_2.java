@@ -37,7 +37,7 @@ class asgmt_2
 	}
 
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		asgmt_2 p1 = new asgmt_2();
 		asgmt_2 p2 = new asgmt_2("Rahul");

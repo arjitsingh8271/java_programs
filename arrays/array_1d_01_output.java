@@ -2,7 +2,7 @@ import java.util.*;
 
 class array_1d_01_output
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 					// declare an array
 		int a[] = new int[2]; 

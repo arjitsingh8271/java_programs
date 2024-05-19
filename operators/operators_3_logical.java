@@ -5,7 +5,7 @@ it return True or False
 
 class operators_3_logical
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int a=4,b=5;
 

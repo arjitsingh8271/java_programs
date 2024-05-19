@@ -35,7 +35,7 @@
 
 class Bit_Merging_and_Bit_Masking
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		byte a=9, b=12, c;
 

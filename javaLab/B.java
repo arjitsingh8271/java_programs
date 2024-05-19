@@ -7,3 +7,5 @@ public class B
 		System.out.println("Class B, fun_b_1()");
 	}
 }
+
+// to compile: javac -d . B.java

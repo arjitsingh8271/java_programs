@@ -33,7 +33,7 @@ class A
 
 class oops_1_01_1_class_object_field_and_method
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		A aa = new A();			// aa is a object of 'A' class
 		

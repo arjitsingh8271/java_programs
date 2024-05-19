@@ -8,7 +8,7 @@
 */
 class Swapping_using_XOR_Operator
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		int a=9, b=12;
 		System.out.println("Before Swapping a: " +a +"  " +"b: " +b);

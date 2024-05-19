@@ -26,7 +26,7 @@ class A
 
 class oops_1_08_static_block_in_class 
 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // calling the static method
         A.display();
     }

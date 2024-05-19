@@ -22,7 +22,7 @@ import java.util.*;
 
 class _04_input_from_keyboard
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int age;
 		String name;

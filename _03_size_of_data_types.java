@@ -2,7 +2,7 @@ import java.lang.*;
 
 class _03_size_of_data_types
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		System.out.println("byte: " + "\t" + Byte.SIZE + " bits");		// \t for tab
 		System.out.println("short: " + "\t" + Short.SIZE + " bits");

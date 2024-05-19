@@ -29,7 +29,7 @@ class A
 
 class oops_1_03_1_class_method_overloading
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		A a = new A();
 		System.out.println(a.addNum(1,2));		// 3

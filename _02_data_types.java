@@ -20,7 +20,7 @@ import java.lang.*;
 
 class _02_data_types
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		byte a = 1;
 		short b = 3;

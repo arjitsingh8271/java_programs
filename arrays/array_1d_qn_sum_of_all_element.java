@@ -13,7 +13,7 @@ class array_1d_qn_sum_of_all_element
 		return sum;
 	}
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int arr[] = {5, 2, 3, 4, 1};
 		System.out.println(sum(arr));

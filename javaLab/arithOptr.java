@@ -22,3 +22,5 @@ public class arithOptr
 		System.out.println(a/b);
 	}
 }
+
+// to compile: javac -d . arithOptr.java

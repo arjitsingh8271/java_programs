@@ -29,7 +29,7 @@ class House
 
 class Question2
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		Room r1 = new Room ("Red", "Morden");
 		Room r2 = new Room ("Orange", "Clasic");

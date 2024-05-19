@@ -16,7 +16,7 @@ class function_QN_palindrone_number
 
 	}
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		Scanner s = new Scanner(System.in);
 		int a = s.nextInt();

@@ -2,7 +2,7 @@ import java.util.*;
 
 class array_1d_05_character_array
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int a[] = {1,2};
 		System.out.println(a);

@@ -2,7 +2,7 @@ import java.io.*;
 
 class InputOutput_using_io
 {
-	public static void main(String args[]) throws IOException
+	public static void main(String[] args) throws IOException
 	{
 		int num;
 		try

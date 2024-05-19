@@ -2,7 +2,7 @@ import java.lang.*;
 
 class _01_print_message
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		System.out.println("Hello World");	// System: is a class
 											// out: is object of System class

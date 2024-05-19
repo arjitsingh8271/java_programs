@@ -16,7 +16,7 @@ class A
 
 class oops_1_06_static_keyword_in_class
 {
-	public static void main (String arg[])
+	public static void main (String[] args)
 	{
 		System.out.println(A.num);	// 2
 		A.display();				// display method called

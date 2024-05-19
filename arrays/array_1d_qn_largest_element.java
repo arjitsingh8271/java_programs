@@ -14,7 +14,7 @@ class array_1d_qn_largest_element
 		return max;
 	}
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int arr[] = {5, 2, 3, 4, 1};
 		System.out.println(l_elmt(arr));

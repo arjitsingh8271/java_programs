@@ -15,7 +15,7 @@ class A
 
 class oops_1_05_constructor_overloading
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		A a = new A(1,2);		// 3
 		A b = new A(1,2,3);		// 6

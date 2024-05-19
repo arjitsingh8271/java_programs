@@ -7,3 +7,5 @@ public class A
 		System.out.println("Class A, fun_a_1()");
 	}
 }
+
+// to compile: javac -d . A.java

@@ -1,6 +1,6 @@
 class array_1d_04_for_each_loop
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int arr[] = {1,2,3,4};
 

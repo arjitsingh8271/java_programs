@@ -19,7 +19,7 @@ NOTE : (Merging and Masking) in Tutorial videos on SSD
 
 class Bitwise_Operators
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		int a=10, b=6, c=-10, w,x,y,z, p,q,r;
 

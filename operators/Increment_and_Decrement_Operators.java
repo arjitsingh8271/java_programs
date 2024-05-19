@@ -1,6 +1,6 @@
 class Increment_and_Decrement_Operators
 {
-	public static void main (String args[])
+	public static void main (String[] args)
 	{
 		int x=5,y;
 		y=x++;  // post++

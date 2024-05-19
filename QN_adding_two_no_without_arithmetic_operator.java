@@ -18,7 +18,7 @@ class QN_adding_two_no_without_arithmetic_operator
 		return b;
 	}
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int a=11, b=5;
 

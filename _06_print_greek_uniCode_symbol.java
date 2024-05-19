@@ -1,6 +1,6 @@
 class _06_print_greek_uniCode_symbol
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		char a = 0x03c8;
 		System.out.println(a);

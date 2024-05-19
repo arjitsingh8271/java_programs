@@ -7,7 +7,7 @@ class array_1d_QN_second_largest_element
 
 	}
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int arr[] = {1, 2, 3, 4, 5}
 	}

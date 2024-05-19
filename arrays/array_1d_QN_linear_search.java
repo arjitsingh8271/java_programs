@@ -17,7 +17,7 @@ class array_1d_QN_linear_search
 		return 0;
 	}
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		int arr[] = {10, 33, 3, 2, 5, 16};
 		int key = 5;
