@@ -5,14 +5,14 @@ parameterized constructor to initialize these
 attributes and methods to displaybook details.
 */
 
-public class asgmt_1_Book 
+public class asgmt_01_Book 
 {
     private String title;
     private String author;
     private double price;
 
     // Parameterized constructor
-    public asgmt_1_Book(String title, String author, double price) 
+    public asgmt_01_Book(String title, String author, double price) 
     {
         this.title = title;
         this.author = author;
@@ -29,7 +29,7 @@ public class asgmt_1_Book
 
     public static void main(String[] args) 
     {
-        asgmt_1_Book myBook = new asgmt_1_Book("Limitless", "Jim Kwik", 12.99);
+        asgmt_01_Book myBook = new asgmt_01_Book("Limitless", "Jim Kwik", 12.99);
         myBook.display();
     }
 }

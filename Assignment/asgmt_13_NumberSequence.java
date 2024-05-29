@@ -7,7 +7,7 @@ displays the sum and average of the entered numbers.
 
 import java.util.Scanner;
 
-public class asgmt_10_NumberSequence 
+public class asgmt_13_NumberSequence 
 {
     public static void main(String[] args) 
     {

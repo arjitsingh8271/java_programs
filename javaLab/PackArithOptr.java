@@ -1,6 +1,6 @@
 package myPack;
 
-public class arithOptr
+public class PackArithOptr
 {
 	public void fun_add(int a, int b)
 	{
@@ -23,4 +23,4 @@ public class arithOptr
 	}
 }
 
-// to compile: javac -d . arithOptr.java
+// to compile: javac -d . PackArithOptr.java

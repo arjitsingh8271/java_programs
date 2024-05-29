@@ -7,7 +7,7 @@ not, and use it to find all prime numbers within a given range.
 
 import java.util.Scanner;
 
-public class asgmt_14_PrimeNumbers 
+public class asgmt_17_PrimeNumbers 
 {
     public static void main(String[] args) 
     {

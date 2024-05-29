@@ -6,7 +6,7 @@ iterative approaches.
 
 import java.util.Scanner;
 
-public class asgmt_8_Factorial 
+public class asgmt_11_Factorial 
 {
     public static void main(String[] args) 
     {

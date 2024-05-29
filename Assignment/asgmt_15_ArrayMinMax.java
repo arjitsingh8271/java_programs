@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class asgmt_12_ArrayMinMax 
+public class asgmt_15_ArrayMinMax 
 {
     public static void main(String[] args) 
     {

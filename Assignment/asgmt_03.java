@@ -99,7 +99,7 @@ class Truck extends Vehicle
     }
 }
 
-public class asgmt_3 {
+public class asgmt_03 {
     
     public static void main(String[] args) 
     {

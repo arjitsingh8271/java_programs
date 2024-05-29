@@ -6,7 +6,7 @@ division).
 
 import java.util.Scanner;
 
-public class asgmt_9_Calculator 
+public class asgmt_12_Calculator 
 {
     public static void main(String[] args) 
     {

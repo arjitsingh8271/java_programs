@@ -23,6 +23,19 @@ Surgeon is a Doctor
 Dog is an Animal
 
 Here, Car can inherit from Vehicle, Orange can inherit from Fruit, and so on.
+
+Types of Inheritance in Java:
+-----------------------------
+1. Single 			2. Multilevel		3. Hierarchical
+	
+	class A 		Class A 				Class A
+		^				^					 ^    ^
+		|				|					 |	  |
+		|			Class B 			Class B  Class c
+	Class B 			^
+						|
+					Class C
+
 */
 
 class superClass

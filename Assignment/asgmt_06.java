@@ -77,7 +77,7 @@ class BankAccount
 }
 
 
-class asgmt_5 
+class asgmt_06 
 {
     public static void main(String[] args) 
     {

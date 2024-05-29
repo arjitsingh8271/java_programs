@@ -1,6 +1,6 @@
 package myPack;
 
-public class B
+public class PackB
 {
 	public void fun_b_1()
 	{
@@ -8,4 +8,4 @@ public class B
 	}
 }
 
-// to compile: javac -d . B.java
+// to compile: javac -d . PackB.java

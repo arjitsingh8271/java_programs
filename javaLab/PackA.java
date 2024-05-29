@@ -1,6 +1,6 @@
 package myPack;
 
-public class A
+public class PackA
 {
 	public void fun_a_1()
 	{

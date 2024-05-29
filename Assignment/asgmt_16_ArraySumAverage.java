@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class asgmt_13_ArraySumAverage 
+public class asgmt_16_ArraySumAverage 
 {
     public static void main(String[] args) 
     {

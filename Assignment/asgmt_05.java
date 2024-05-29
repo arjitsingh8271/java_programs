@@ -67,7 +67,7 @@ class Triangle implements Shape
 
 
 // Main class
-class asgmt_4
+class asgmt_05
 {
 	public static void main (String[] args)
 	{

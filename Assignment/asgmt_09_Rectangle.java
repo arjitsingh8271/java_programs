@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class asgmt_7_Rectangle 
+public class asgmt_09_Rectangle 
 {
     public static void main(String[] args) 
     {
