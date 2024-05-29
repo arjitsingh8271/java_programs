@@ -32,3 +32,16 @@ public class asgmt_14_LeapYear
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 }
+
+
+
+
+/*
+OUTPUT: Enter a year:
+        2001
+        2001 is not a leap year.
+
+        Enter a year:
+        2004
+        2004 is a leap year.
+*/

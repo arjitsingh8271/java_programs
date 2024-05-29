@@ -66,3 +66,13 @@ class asgmt_04_array
 
 	}
 }
+
+
+/*
+OUTPUT: Max ele: 5
+		Min ele: 1
+		Sum of ele: 15
+		Avg of ele: 3
+		1 2 3 4 5 
+		5 4 3 2 1
+*/ 

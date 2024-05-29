@@ -23,3 +23,14 @@ class asgmt_08_package
         System.out.println("Square root of 25: " + advCalc.calculateSquareRoot(25));
     }
 }
+
+
+
+/*
+OUTPUT: Addition: 15.0
+        Subtraction: 5.0
+        Multiplication: 50.0
+        Division: 2.0
+        Square of 9: 81.0
+        Square root of 25: 5.0
+*/

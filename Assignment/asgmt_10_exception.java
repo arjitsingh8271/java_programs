@@ -30,3 +30,16 @@ public class asgmt_10_exception {
         scanner.close();
     }
 }
+
+
+
+
+/*
+OUTPUT: Enter the numerator: 2
+        Enter the denominator: 1
+        Result: 2
+
+        Enter the numerator: 2
+        Enter the denominator: 0
+        Error: Cannot divide by zero.
+*/

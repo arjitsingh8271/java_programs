@@ -31,3 +31,7 @@ public class asgmt_18_Counter
         System.out.println("Current count: " + asgmt_18_Counter.getCount());
     }
 }
+
+
+
+// OUTPUT: Current count: 3

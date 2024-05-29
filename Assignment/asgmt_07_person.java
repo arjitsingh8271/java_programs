@@ -90,3 +90,15 @@ public class asgmt_07_person {
     }
 }
 */
+
+
+
+
+/*
+OUTPUT: Name: Arjit
+        Age: 22
+
+        Name: Rahul
+        Age: 20
+        Student ID: 121
+*/

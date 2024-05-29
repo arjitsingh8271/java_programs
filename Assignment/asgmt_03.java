@@ -119,3 +119,13 @@ public class asgmt_03 {
         truck.stop();
     }
 }
+
+
+/*
+OUTPUT: Starting the car.
+        Stopping the car.
+        Starting the bike.
+        Stopping the bike.
+        Starting the truck.
+        Stopping the truck.
+*/
