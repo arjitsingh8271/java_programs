@@ -17,23 +17,18 @@ class asgmt_04_array
 		int temp;
 
 		
-		// Max element
+		// Max, Min element and Sum
 		for(int i=0 ; i<ar.length; i++)
 		{
 			if (ar[i] > max)
 				max = ar[i];
-		}
-		System.out.println("Max ele: " + max);
-
-
-		// Min element
-		for(int i=0 ; i<ar.length; i++)
-		{
+			
 			if (ar[i] < min)
 				min = ar[i];
 
 			sum = sum + ar[i];
 		}
+		System.out.println("Max ele: " + max);
 		System.out.println("Min ele: " + min);
 		System.out.println("Sum of ele: " + sum);
 
