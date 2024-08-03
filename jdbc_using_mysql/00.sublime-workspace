@@ -1,0 +1,248 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"E",
+				"Exception"
+			],
+			[
+				"thr",
+				"throws"
+			],
+			[
+				"Re",
+				"ResultSet"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"s",
+				"s_lrg"
+			],
+			[
+				"m",
+				"max"
+			],
+			[
+				"t",
+				"table"
+			],
+			[
+				"ht",
+				"html\thtml"
+			],
+			[
+				"b",
+				"body"
+			],
+			[
+				"h",
+				"head"
+			],
+			[
+				"f",
+				"for\tfor"
+			],
+			[
+				"Ar",
+				"Array"
+			],
+			[
+				"S",
+				"System"
+			],
+			[
+				"for",
+				"fore\tfor (each)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"View Package File"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/arjit/Desktop/Programming/java_programming/00_JDBC/java_db_fetch_data_using_loop.java",
+		"/home/arjit/Desktop/Programming/java_programming/00_JDBC/00.txt",
+		"/home/arjit/Desktop/Programming/java_programming/00_JDBC/java_db_connect.java",
+		"/home/arjit/Desktop/Programming/java_programming/00_JDBC/java_db_fetch_data.java",
+		"/home/arjit/Desktop/Programming/java_programming/arrays/array_1d_QN_second_largest_element.java",
+		"/home/arjit/Desktop/Programming/web_devlopment/learn/html/table_1.html",
+		"/home/arjit/Desktop/Programming/web_devlopment/learn/html/table_2.html",
+		"/home/arjit/Desktop/Programming/web_devlopment/learn/html/table_3.html",
+		"/home/arjit/Desktop/Programming/c_programming/a.c",
+		"/home/arjit/Desktop/Programming/java_programming/qn/two-sum.java",
+		"/home/arjit/Desktop/Programming/java_programming/accenture_q/qn02_reverse_a_string.java",
+		"/home/arjit/Desktop/Programming/java_programming/accenture_q/qn01_reverse_a_number.java",
+		"/home/arjit/Desktop/Programming/web_devlopment/learn/index.html",
+		"/home/arjit/Desktop/Programming/c_programming/swap_two_no_without_third_variable.c"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "00.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
