@@ -21,7 +21,6 @@ class java_db_fetch_data_using_loop {
 			
 			// Execute a query
 			ResultSet rs = st.executeQuery("select * from Students");
-			//rs.first();
 
 			// Display query
         	while (rs.next()) {
@@ -30,14 +29,14 @@ class java_db_fetch_data_using_loop {
                 int roll = rs.getInt("Roll");
                 String name = rs.getString("Name");
                 String dept = rs.getString("Dept");
-                String dist = rs.getString("Dist");
+                String city = rs.getString("City");
                 String state = rs.getString("State");
 
                 // Display values
                 System.out.print("Roll: " + roll);
                 System.out.print(", Name: " + name);
                 System.out.print(", Department: " + dept);
-                System.out.print(", Distric: " + dist);
+                System.out.print(", Distric: " + city);
                 System.out.println(", State: " + state);
 
             }
