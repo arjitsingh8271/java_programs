@@ -1,6 +1,6 @@
 // http://www.unicode.org/charts/
 
-class print_all_letter
+class QN_print_all_letter
 {
 	public static void main (String[] args)
 	{

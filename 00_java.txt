@@ -1,0 +1,46 @@
+To compile the file, open your terminal and type
+	$javac filename.java
+To run the generated class file, use
+	$java filename
+
+
+To check java version
+	$ java --version
+
+
+----------------------------------
+
+1. Variable Names
+	camelCase (Lower CamelCase) 
+	Descriptive and Meaningful
+	ex: customerName, totalAmount, index, isVerified, orderList
+
+2. Naming Conventions for Boolean Variables
+	Prefix with "is", "has", "can", or "should":
+	ex: isAvailable, hasLicense, canProceed, shouldRetry
+
+3. Method Names
+	camelCase (Lower CamelCase)
+	ex: getName(), processPayment(), calculateTotal(), printReport()
+
+4. Method Parameters
+	Descriptive Names
+	ex: calculateInterest(double principalAmount, double rate, int timePeriod)
+
+5. Constants
+	ALL_CAPS_WITH_UNDERSCORES 
+	Descriptive Names
+	ex: MAX_RETRIES, DEFAULT_TIMEOUT, PI, MIN_AGE
+
+6. Class Names
+	PascalCase (Upper CamelCase)
+	ex: Customer, Invoice, LinkedList, HttpRequestHandler
+
+7. Package Names
+	Lowercase 
+	Reverse Domain Name
+	ex: com.example.projectname, org.companyname.module
+
+8. Plural Names for Collections
+	Use Plural Names for Collections
+	ex: List<String> names, Set<Integer> ids, int[] scores

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class function_QN_palindrone_number
+class qn_palindrone_number
 {
 	static Boolean isPalindrome(int x)
 	{
