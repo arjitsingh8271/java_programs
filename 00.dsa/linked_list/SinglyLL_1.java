@@ -1,4 +1,4 @@
-class SingleLinkedList_1 {
+class SinglyLL_1 {
 	
 	static class Node {
 	
@@ -116,7 +116,7 @@ class SingleLinkedList_1 {
 
 	public static void main(String[] args) {
 
-		SingleLinkedList_1 ll = new SingleLinkedList_1();
+		SinglyLL_1 ll = new SinglyLL_1();
 
 		System.out.println("insertAtBegin(): ");
 		ll.insertAtBegin(10);

@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-class SingleLinkedList_2_Manu {
+class SinglyLL_2_Manu {
 	
 	static class Node {
 
 		int data;
 		Node next;
 
-		Node (int data) {
+		Node(int data) {
 			this.data = data;
 			this.next = null;
 		}
@@ -127,7 +127,7 @@ class SingleLinkedList_2_Manu {
 
 		Scanner sc = new Scanner(System.in);
 
-		SingleLinkedList_2_Manu ll = new SingleLinkedList_2_Manu();
+		SinglyLL_2_Manu ll = new SinglyLL_2_Manu();
 		
 		char ch;
 
