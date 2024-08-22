@@ -20,6 +20,7 @@ class CircularLL_2_Manu {
 	void insertAtBegin() {
 		System.out.print("Data: ");
 		int data = sc.nextInt();
+		
 		Node new_node = new Node(data);
 
 		if(head == null) {
@@ -38,6 +39,7 @@ class CircularLL_2_Manu {
 	void insertAtEnd() {
 		System.out.print("Data: ");
 		int data = sc.nextInt();
+		
 		Node new_node = new Node(data);
 
 		if(head == null) {
@@ -58,6 +60,7 @@ class CircularLL_2_Manu {
 		int pos = sc.nextInt();
 		System.out.print("Data: ");
 		int data = sc.nextInt();
+		
 		Node new_node = new Node(data);
 		if(head == null){
 			head = new_node;
@@ -103,6 +106,7 @@ class CircularLL_2_Manu {
 	void deleteAtPosition() {
 		System.out.print("Position: ");
 		int pos = sc.nextInt();
+		
 		if(head == null)
 			System.out.println("List is Empty.");
 		else {
@@ -204,19 +208,3 @@ class CircularLL_2_Manu {
 
 	}
 }
-
-
-/*
-OUTPUT: insertAtBegin():
-		30 20 10 
-		insertAtEnd():
-		30 20 10 40 50 60 
-		insertAtPosition(3, 70):
-		30 20 70 10 40 50 60 
-		deletAtBegin():
-		20 70 10 40 50 60 
-		deletAtEnd():
-		20 70 10 40 50 
-		deletAtPosition(4):
-		20 70 10 50 
-*/

@@ -1,4 +1,6 @@
-class DoublyLL_1 {
+import java.util.Scanner;
+
+class DoublyLL_2_Manu {
 	
 	static class Node {
 		int data;
@@ -15,7 +17,12 @@ class DoublyLL_1 {
 	Node head = null;
 	Node tail = null;
 
-	void insertAtBegin(int data) {
+	Scanner sc = new Scanner(System.in);
+
+	void insertAtBegin() {
+		System.out.print("Data: ");
+		int data = sc.nextInt();
+		
 		Node new_node = new Node(data);
 
 		if(head == null) {
@@ -30,7 +37,10 @@ class DoublyLL_1 {
 	}
 
 
-	void insertAtEnd(int data) {
+	void insertAtEnd() {
+		System.out.print("Data: ");
+		int data = sc.nextInt();
+		
 		Node new_node = new Node(data);
 
 		if(head == null) {
@@ -49,7 +59,12 @@ class DoublyLL_1 {
 	}
 
 
-	void insertAtPosition(int pos, int data) {
+	void insertAtPosition() {
+		System.out.print("Position: ");
+		int pos = sc.nextInt();
+		System.out.print("Data: ");
+		int data = sc.nextInt();
+		
 		Node new_node = new Node(data);
 
 		if(head == null) {
@@ -109,7 +124,10 @@ class DoublyLL_1 {
 	}
 
 
-	void deleteAtPosition(int pos) {
+	void deleteAtPosition() {
+		System.out.print("Position: ");
+		int pos = sc.nextInt();
+
 		if(head == null)
 			System.out.println("List is Empty.");
 		else {
@@ -159,71 +177,77 @@ class DoublyLL_1 {
 
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		DoublyLL_2_Manu ll = new DoublyLL_2_Manu();
 		
-		DoublyLL_1 ll = new DoublyLL_1();
+		char ch;
 
-		System.out.println("insertAtBegin():");
-		ll.insertAtBegin(10);
-		ll.insertAtBegin(20);
-		ll.insertAtBegin(30);
+		do {	
+			System.out.println("1 for insertAtBegin");
+			System.out.println("2 for insertAtEnd");
+			System.out.println("3 for insertAtPosition");
+			System.out.println("4 for deleteAtBegin");
+			System.out.println("5 for deleteAtEnd");
+			System.out.println("6 for deleteAtPosition");
+			System.out.println("7 for display");
+			
+			System.out.print("Input: ");
+			int n = sc.nextInt();
 
+			switch(n) {
 
-		ll.forwardDisplay();
-		ll.backwardDisplay();
+				case 1:
+					ll.insertAtBegin();		
+					ll.forwardDisplay();
+					ll.backwardDisplay();
+					break;
+			
+				case 2:
+					ll.insertAtEnd();	
+					ll.forwardDisplay();
+					ll.backwardDisplay();
+					break;
+			
+				case 3:	
+					ll.insertAtPosition();
+					ll.forwardDisplay();
+					ll.backwardDisplay();
+					break;
+			
+				case 4:
+					ll.deleteAtBegin();
+					ll.forwardDisplay();
+					ll.backwardDisplay();
+					break;
+				
+				case 5:
+					ll.deleteAtEnd();
+					ll.forwardDisplay();
+					ll.backwardDisplay();
+					break;
+			
+				case 6:
+					ll.deleteAtPosition();
+					ll.forwardDisplay();
+					ll.backwardDisplay();
+					break;
+			
+				case 7:
+					ll.forwardDisplay();
+					ll.backwardDisplay();
+					break;
+			
+				default:
+					System.out.println("Enter a valid number.");
+			}
 
-		System.out.println("insertAtEnd():");
-		ll.insertAtEnd(40);
-		ll.insertAtEnd(50);
-		ll.insertAtEnd(60);
+			System.out.print("Do you want to continue (Type y or n) ");
+            ch = sc.next().charAt(0);                         
 
-		ll.forwardDisplay();
-		ll.backwardDisplay();
+		} while (ch == 'Y'|| ch == 'y');
 
-		System.out.println("insertAtPosition(3, 70):");
-		ll.insertAtPosition(3, 70);
-
-		ll.forwardDisplay();
-		ll.backwardDisplay();
-
-		System.out.println("deleteAtBegin():");
-		ll.deleteAtBegin();
-
-		ll.forwardDisplay();
-		ll.backwardDisplay();
-
-		System.out.println("deleteAtEnd():");
-		ll.deleteAtEnd();
-
-		ll.forwardDisplay();
-		ll.backwardDisplay();
-
-		System.out.println("deleteAtPosition(4):");
-		ll.deleteAtPosition(4);
-
-		ll.forwardDisplay();
-		ll.backwardDisplay();
+	
 	}
 
 }
-
-
-/*
-OUTPUT:	insertAtBegin():
-		Forward List: 30 20 10 
-		Backward List: 10 20 30 
-		insertAtEnd():
-		Forward List: 30 20 10 40 50 60 
-		Backward List: 60 50 40 10 20 30 
-		insertAtPosition(3, 70):
-		Forward List: 30 20 70 10 40 50 60 
-		Backward List: 60 50 40 10 70 20 30 
-		deleteAtBegin():
-		Forward List: 20 70 10 40 50 60 
-		Backward List: 60 50 40 10 70 20 
-		deleteAtEnd():
-		Forward List: 20 70 10 40 50 
-		Backward List: 50 40 10 70 20 
-		deleteAtPosition(4):
-		Forward List: 20 70 10 50 
-		Backward List: 50 10 70 20 
-*/
