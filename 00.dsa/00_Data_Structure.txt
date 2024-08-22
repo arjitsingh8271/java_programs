@@ -20,9 +20,10 @@ II. Non-Primitive:
 	1. Linear:
 		1. String
 		2. Array
-		3. List, 4. Set, 5. Queue
-		6. ArrayList, 7. LinkedList, 8. HashSet, 9. LinkedHashSet
-		etc.
+		3. Linked List
+		4. Stack
+		5. Queue
+
 
 
 	2. Non-Linear:
@@ -32,3 +33,27 @@ II. Non-Primitive:
 
 In Non-primitive Data Structure we can store
 'Multiple data in a single Entity'.
+
+
+
+Java Collection:
+----------------
+					
+					(iterable)
+
+					(collection)
+
+(List) 				(Queue)					(Set)
+	[ArrayList]			[PriorityQueue]			[HashSet]
+	[LinkedList]		(Deque)					[LinkedHashSet]
+	[Vector]				[ArrayDeque]		(SortedSet)
+  		[Stack]										[TreeSet]
+
+----------------------------------------------------------------
+
+(Map)
+	[HashMap]
+	[LinkedHashMap]
+	[HashTable]
+	(SortedMap)
+		[TreeMap]
