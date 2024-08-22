@@ -36,20 +36,32 @@ In Non-primitive Data Structure we can store
 
 
 
-Java Collection:
+Java Collection: 
 ----------------
-					
-					(iterable)
+NOTE: (Interface), [Class]
 
-					(collection)
 
-(List) 				(Queue)					(Set)
-	[ArrayList]			[PriorityQueue]			[HashSet]
-	[LinkedList]		(Deque)					[LinkedHashSet]
-	[Vector]				[ArrayDeque]		(SortedSet)
-  		[Stack]										[TreeSet]
+(iterable)
+	(collection)
 
-----------------------------------------------------------------
+		(List)
+			[ArrayList]
+			[LinkedList]
+			[Vector]
+  				[Stack]
+
+  		(Queue)
+  			[PriorityQueue]
+  			(Deque)
+  				[ArrayDeque]
+
+  		(Set)
+  			[HashSet]
+  			[LinkedHashSet]
+  			(SortedSet)
+  				[TreeSet]
+
+---------------------------------
 
 (Map)
 	[HashMap]
