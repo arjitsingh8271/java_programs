@@ -5,6 +5,22 @@ class StackUsingArray_1 {
 	int top = -1;
 
 
+	boolean isUnderflow() {
+		if (top == -1)
+			return true;
+		else 
+			return false;
+	}
+
+
+	boolean isOverflow() {
+		if (top == size-1)
+			return true;
+		else 
+			return false;
+	}
+
+
 	void push(int data) {
 		if(top == size-1)
 			System.out.println("Stack Overflow.");
@@ -47,6 +63,9 @@ class StackUsingArray_1 {
 	public static void main(String[] args) {
 		StackUsingArray_1 s = new StackUsingArray_1();
 
+		System.out.println("isUnderflow(): "+s.isUnderflow());
+		System.out.println("isOverflow(): "+s.isOverflow());
+
 		s.pop();
 
 		s.push(10);
@@ -81,7 +100,9 @@ class StackUsingArray_1 {
 
 
 /*
-OUTPUT: Stack Underflow.
+OUTPUT: isUnderflow(): true
+		isOverflow(): false
+		Stack Underflow.
 		push(10)
 		Stack: 10 
 		push(20)

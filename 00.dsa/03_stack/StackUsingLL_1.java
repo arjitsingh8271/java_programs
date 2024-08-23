@@ -13,6 +13,14 @@ class StackUsingLL_1 {
 	Node top = null;
 
 
+	boolean isUnderflow() {
+		if (top == null)
+			return true;
+		else 
+			return false;
+	}
+
+
 	void push(int data) {
 		Node new_node = new Node(data);
 		
@@ -67,6 +75,8 @@ class StackUsingLL_1 {
 		
 		StackUsingLL_1 s = new StackUsingLL_1();
 
+		System.out.println("isUnderflow(): " +s.isUnderflow());
+
 		s.pop();
 		
 		s.push(10);
@@ -75,6 +85,8 @@ class StackUsingLL_1 {
 		s.push(20);
 		s.display();
 		
+		System.out.println("isUnderflow(): " +s.isUnderflow());
+
 		s.push(30);
 		s.display();
 
@@ -93,11 +105,13 @@ class StackUsingLL_1 {
 
 
 /*
-OUTPUT: Stack Underflow.
+OUTPUT: isUnderflow(): true
+		Stack Underflow.
 		push(10)
 		Stack: 10 
 		push(20)
 		Stack: 20 10 
+		isUnderflow(): false
 		push(30)
 		Stack: 30 20 10 
 		peek(): 30
