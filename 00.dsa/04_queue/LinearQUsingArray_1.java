@@ -24,7 +24,7 @@ class LinearQUsingArray_1 {
 			System.out.println("Queue is Overflow.");
 		}		
 		else {		
-			if(front == -1 && rear == -1) {
+			if(isUnderflow()) {
 				front +=1;
 				rear +=1;
 				arr[rear] = data;
