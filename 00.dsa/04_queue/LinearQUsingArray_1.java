@@ -9,24 +9,18 @@ class LinearQUsingArray_1 {
 
 
 	boolean isUnderflow() {
-		if(front == -1 && rear == -1)
-			return true;
-		else
-			return false;
+		return front == -1 && rear == -1;
 	}
 
 
 	boolean isOverflow() {
-		if(rear == size-1)
-			return true;
-		else 
-			return false;
+		return rear == size-1;
 	}
 
 
 	void enQueue(int data) {
 
-		if(rear == size-1)
+		if(isOverflow())
 			System.out.println("Queue is Overflow.");
 		
 		else {
