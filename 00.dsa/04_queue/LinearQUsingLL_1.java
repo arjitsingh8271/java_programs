@@ -15,17 +15,14 @@ class LinearQUsingLL_1 {
 
 
 	boolean isUnderflow() {
-		if (front == null)
-			return true;
-		else
-			return false;
+		return front == null;
 	}	
 
 
 	void enQueue(int data) {
 		Node new_node = new Node(data);
 
-		if (front == null) {
+		if (isUnderflow()) {
 			front = new_node;
 			rear = new_node;
 			System.out.println("enQueue(" +data +")");
@@ -41,7 +38,7 @@ class LinearQUsingLL_1 {
 
 	void deQueue() {
 		
-		if (front == null)
+		if (isUnderflow())
 			System.out.println("deQueue(): Queue is Underflow");
 		
 		else {
@@ -54,7 +51,7 @@ class LinearQUsingLL_1 {
 	void display() {
 		System.out.print("Queue: ");
 
-		if (front == null)
+		if (isUnderflow())
 			System.out.println("Queue is Underflow");
 		
 		else {
