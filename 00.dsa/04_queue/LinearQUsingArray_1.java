@@ -1,4 +1,4 @@
-class QueueUsingArray_1 {
+class LinearQUsingArray_1 {
 
 	int size = 10;
 
@@ -75,7 +75,7 @@ class QueueUsingArray_1 {
 
 	public static void main(String[] args) {
 		
-		QueueUsingArray_1 q = new QueueUsingArray_1();
+		LinearQUsingArray_1 q = new LinearQUsingArray_1();
 
 		System.out.println("isUnderflow(): " +q.isUnderflow());
 		System.out.println("isOverflow(): " +q.isOverflow());
@@ -99,6 +99,7 @@ class QueueUsingArray_1 {
 		q.display();
 
 		q.deQueue();
+
 	}
 
 }
