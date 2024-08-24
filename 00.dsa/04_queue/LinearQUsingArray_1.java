@@ -20,18 +20,16 @@ class LinearQUsingArray_1 {
 
 	void enQueue(int data) {
 
-		if(isOverflow())
+		if(isOverflow()) {
 			System.out.println("Queue is Overflow.");
-		
-		else {
-			
+		}		
+		else {		
 			if(front == -1 && rear == -1) {
 				front +=1;
 				rear +=1;
 				arr[rear] = data;
 				System.out.println("enQueue(" +data +")");
-			}
-			
+			}		
 			else {
 				rear +=1;
 				arr[rear] = data;
@@ -42,9 +40,12 @@ class LinearQUsingArray_1 {
 
 
 	void deQueue() {
-		if(front > rear)
+		if(isUnderflow()) {
 			System.out.println("Queue is Underflow.");
-
+		}
+		else if (front == rear) {
+			front = rear = -1;
+		}
 		else {
 			front +=1;
 			System.out.println("deQueue()");
@@ -52,11 +53,20 @@ class LinearQUsingArray_1 {
 	}
 
 
+	void front() {
+		if (isUnderflow()) {
+			System.out.println("Queue is Underflow.");
+		}
+		System.out.println("Front: " +arr[front]);
+	}
+
+
 	void display() {
 		System.out.print("Queue: ");
 		
-		if(front > rear)
+		if(isUnderflow()) {
 			System.out.println("Queue is Underflow.");
+		}
 		else {
 			for (int i=front; i<=rear; i++) {
 				System.out.print(arr[i] +" ");
@@ -82,9 +92,11 @@ class LinearQUsingArray_1 {
 
 		q.enQueue(30);
 		q.display();
+		q.front();
 
 		q.deQueue();
 		q.display();
+		q.front();
 
 		q.deQueue();
 		q.display();
@@ -109,8 +121,10 @@ OUTPUT: isUnderflow(): true
 		Queue: 10 20 
 		enQueue(30)
 		Queue: 10 20 30 
+		Front: 10
 		deQueue()
 		Queue: 20 30 
+		Front: 20
 		deQueue()
 		Queue: 30 
 		deQueue()

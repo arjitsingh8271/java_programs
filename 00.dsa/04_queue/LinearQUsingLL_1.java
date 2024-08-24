@@ -48,6 +48,14 @@ class LinearQUsingLL_1 {
 	}
 
 
+	void front() {
+		if (isUnderflow())
+			System.out.println("deQueue(): Queue is Underflow");
+		else
+			System.out.println("Front: " +front.data);
+	}
+
+
 	void display() {
 		System.out.print("Queue: ");
 
@@ -79,9 +87,11 @@ class LinearQUsingLL_1 {
 		q.display();
 		q.enQueue(30);
 		q.display();
+		q.front();
 		
 		q.deQueue();
 		q.display();
+		q.front();
 		
 		q.deQueue();
 		q.display();
@@ -105,8 +115,10 @@ OUTPUT: isUnderflow(): true
 		Queue: 10 20
 		enQueue(30)
 		Queue: 10 20 30 
+		Front: 10
 		deQueue()
-		Queue: 20 30 
+		Queue: 20 30
+		Front: 20
 		deQueue()
 		Queue: 30 
 		deQueue()
