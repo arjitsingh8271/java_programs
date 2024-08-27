@@ -1,0 +1,45 @@
+Java Collection: 
+----------------
+	
+	1. Collection Interface
+	2. Map Interface
+	3. Iterator
+
+
+NOTE: (Interface), [Class]
+
+
+(iterable)
+	(collection)
+
+		(List)
+			[ArrayList]
+			[LinkedList]
+			[Vector]
+  				[Stack]
+
+  		(Queue)
+  			[PriorityQueue]
+  			(Deque)
+  				[ArrayDeque]
+
+  		(Set)
+  			[HashSet]
+  			[LinkedHashSet]
+  			(SortedSet)
+  				[TreeSet]
+
+---------------------------------
+
+(Map)
+	[HashMap]
+	[LinkedHashMap]
+	[HashTable]
+	(SortedMap)
+		[TreeMap]
+
+
+----------------------------------
+
+(iterator)
+	[List Iterator]
