@@ -38,6 +38,12 @@ In Non-primitive Data Structure we can store
 
 Java Collection: 
 ----------------
+	
+	1. Collection Interface
+	2. Map Interface
+	3. Iterator
+
+
 NOTE: (Interface), [Class]
 
 
@@ -69,3 +75,9 @@ NOTE: (Interface), [Class]
 	[HashTable]
 	(SortedMap)
 		[TreeMap]
+
+
+----------------------------------
+
+(iterator)
+	[List Iterator]
