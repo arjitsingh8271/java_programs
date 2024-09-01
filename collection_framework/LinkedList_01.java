@@ -39,7 +39,7 @@ class LinkedList_01 {
 		System.out.println(fruits.getFirst());	// Banana
 		System.out.println(fruits.getLast());	// Orange
 
-		// Access an all element
+		// Access all element
 		System.out.println(fruits);				// [Banana, Apple, Cherry, Orange]
 
 		// Update an element

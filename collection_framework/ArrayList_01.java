@@ -35,7 +35,7 @@ class ArrayList_01 {
 		// Access an 1 element
 		System.out.println(fruits.get(1));		// Banana
 
-		// Access an all element
+		// Access all element
 		System.out.println(fruits);				// [Apple, Banana, Cherry]
 
 		// Update an element
