@@ -1,13 +1,14 @@
-class array_1d_QN_sub_array_in_an_array {
+class array_1d_QN_sum_of_sub_array {
 	
 	static void sub_array(int a[]) {
-
+		
 		for (int i=0; i<a.length; i++) {
 			for (int j=i; j<a.length; j++) {
+				int sum = 0;
 				for (int k=i; k<=j; k++) {
-					System.out.print(a[k] +" ");
+					sum += a[k];
 				}
-				System.out.print(" ");
+				System.out.print(sum +" ");
 			}
 			System.out.println();
 		}
@@ -22,9 +23,10 @@ class array_1d_QN_sub_array_in_an_array {
 
 
 
-
 /*
-OUTPUT: 1  1 2  1 2 3
-		2  2 3  
+OUTPUT: 1 3 6 
+		2 5 
 		3
 */
+
+
