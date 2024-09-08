@@ -17,13 +17,13 @@ class Str_InbuiltMethods {
 		// 3. substring(int beginIndex)
 		// Returns a substring starting from the specified index.
 		String str3 = "Hello World";
-		System.out.println(str3.substring(6));		// Output: World
+		System.out.println(str3.substring(6));	// Output: World
 
 
 		// 4. substring(int beginIndex, int endIndex)
 		// Returns a substring from beginIndex (inclusive) to endIndex (exclusive).
 		String str4 = "Hello World";
-		System.out.println(str4.substring(0, 5)); 	// Output: Hello
+		System.out.println(str4.substring(0, 5)); // Output: Hello
 
 
 		// 5. contains(CharSequence s)
