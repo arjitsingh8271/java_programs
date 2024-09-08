@@ -25,7 +25,7 @@ class str_qn4_reverseStr {
 	}
 
 
-	// char[]
+	// Convert into char[]
 	static String revStr4(String str) {
 		char[] c = str.toCharArray();
 		String rev = "";
