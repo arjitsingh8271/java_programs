@@ -1,0 +1,61 @@
+Class:
+------
+A class is like a blueprint or template for creating objects. 
+It defines the properties (attributes) and behaviors (methods) 
+that the objects created from the class will have.
+
+Real-World Analogy: Think of a class like a blueprint of a house. 
+The blueprint defines the structure (number of rooms, windows, etc.), 
+but it is not the actual house. It's only a design that can be used 
+to build many houses.
+
+
+Object:
+-------
+An object is an instance of a class. Once you have the class defined 
+(like a blueprint), you can create objects (like houses built from that blueprint).
+
+Real-World Analogy: The actual house built from the blueprint is the object. 
+While the blueprint is the design, the house is the physical entity that 
+exists and can be interacted with.
+
+
+Encapsulation (Data Hiding):
+-------------- 
+Hides internal details and only exposes what is necessary (e.g., ATM interface).
+
+Real-World Analogy: In an ATM machine, the internal workings of how the ATM 
+processes transactions, handles cash, or interacts with the bank’s systems are 
+hidden from the user. Users only interact with a simple interface (insert card, 
+enter PIN, withdraw/deposit cash).
+
+
+Inheritance (Reusing Properties and Behaviors): 
+------------
+Reuses properties and behaviors from a parent class 
+(e.g., Birds inherit characteristics from Animals).
+
+Real-World Analogy: Think of different types of animals like Mammals, Birds, 
+Reptiles, etc. All animals share common characteristics like breathing, moving, 
+and eating, but specific types of animals (e.g., Birds) inherit those 
+characteristics and add their own (e.g., flying).
+
+
+Polymorphism (Many Forms):
+-------------
+The ability to process objects differently based on their class 
+(e.g., different payment methods).
+
+Real-World Analogy: In an e-commerce platform, you can pay using credit card, PayPal, 
+or cash on delivery. The system processes payments differently based on the method 
+used, but all payment types follow a common interface of "process payment."
+
+
+Abstraction (Hiding Complexity): 
+------------
+Simplifies complex systems by hiding unnecessary details (e.g., car dashboard controls).
+
+Real-World Analogy: When driving a car, you don’t need to know how the engine works. 
+You just use the steering wheel, accelerator, and brake to control the car. 
+The complexity of the car's internal workings (engine, gearbox) is abstracted 
+away by the dashboard.
