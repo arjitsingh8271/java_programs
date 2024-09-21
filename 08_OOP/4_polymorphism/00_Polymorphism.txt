@@ -1,0 +1,34 @@
+Polymorphism:
+-------------
+Polymorphism means many form. 
+Means a single Method having many form.
+
+Types of Polymorphism:
+----------------------
+	Compile Time :
+	------------
+	It will takes decision on Compile time which method to call.
+	Using Method Overloading we can achive Compile Time Polymorphism.
+
+	Run Time:
+	--------
+	It will takes decision on Run time which method to call.
+	Using Method Overriding we can achive Run Time Polymorphism.
+	(Dynamic Method Dispatch)
+	
+Method Overloading:
+------------------
+Two or more methods may have the same name if they 
+differ in parameters (different number of parameters, 
+different types of parameters, or both). These methods 
+are called overloaded methods and this feature is called 
+method overloading. 
+
+For example:
+
+void func() { ... }
+void func(int a) { ... }
+float func(double a) { ... }
+float func(int a, float b) { ... }
+
+

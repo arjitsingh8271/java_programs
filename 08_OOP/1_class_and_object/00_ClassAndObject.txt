@@ -1,0 +1,30 @@
+Class: 
+------
+A class is a blueprint for the object. Before we create an object, we first need to define the class.
+A Class contain Properties & Behaviour of a Object.
+
+Object:
+-------
+An Object is a instance of a Class. 
+An Object have some Properties & Behaviour that are define in the Class.
+
+
+Eg:	
+
+class Car {		// Class
+	
+	// Properties
+	String model;
+	String brand;
+	String colour;
+	int maxSpeed;
+
+	// Behaviour
+	void Accelerate();
+	void Brake();
+
+	public static void main(String[] args) {
+
+		Car c = new Car();	// c is an Object of Car class
+	}
+}

@@ -1,0 +1,6 @@
+Encapsulation:
+-------------- 
+Binding the Data & methods into a Single unit i.e Class.
+Hiding the data so no one can directly access the data.
+Using Access Modifiers like:
+	Private, Protected

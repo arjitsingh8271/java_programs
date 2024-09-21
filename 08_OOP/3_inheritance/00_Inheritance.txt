@@ -1,0 +1,37 @@
+Inheritance:
+------------
+Inheritance allows us to create a new class from an 
+existing class.
+
+The new class that is created is known as subclass 
+(child or derived class) and the existing class from 
+where the child class is derived is known as superclass 
+(parent or base class).
+
+The 'extends' keyword is used to perform inheritance in Java.
+
+is-a relationship:
+------------------
+In Java, inheritance is an is-a relationship. That is, we use 
+inheritance only if there exists an is-a relationship between 
+two classes. For example,
+
+Car is a Vehicle
+Orange is a Fruit
+Surgeon is a Doctor
+Dog is an Animal
+
+Here, Car can inherit from Vehicle, Orange can inherit from Fruit, and so on.
+
+Types of Inheritance in Java:
+-----------------------------
+1. Single 			2. Multilevel		3. Hierarchical
+	
+	class A 		Class A 				Class A
+		^				^					 ^    ^
+		|				|					 |	  |
+		|			Class B 			Class B  Class c
+	Class B 			^
+						|
+					Class C
+
