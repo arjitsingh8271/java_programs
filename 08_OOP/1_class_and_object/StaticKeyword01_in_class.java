@@ -1,4 +1,5 @@
 /*
+It is used in memory management.
 static keyword in Java. If we want to access class 
 members without creating an instance/object of the class, 
 we need to declare the class members static.

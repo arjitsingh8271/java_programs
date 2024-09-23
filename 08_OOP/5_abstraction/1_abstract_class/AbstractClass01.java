@@ -4,8 +4,8 @@ and showing only essential information to the user.
 Abstraction can be achieved with either abstract classes or interfaces.
 
 
-Key Points to Remember
-----------------------
+Key Points to Remember for Abstract
+------------------------------------
 
 We use the abstract keyword to create abstract classes and methods.
 

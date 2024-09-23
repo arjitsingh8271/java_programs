@@ -10,13 +10,13 @@ behavior of the object respectively.
 
 class CAR {
 	
-	// Properties
+	// Properties / Fields
 	String model;
 	String brand;
 	String colour;
 	int speed;
 
-	// Behaviour
+	// Behaviour / Methods
 	void Accelerate() {
 		speed +=5;
 		System.out.println(speed);

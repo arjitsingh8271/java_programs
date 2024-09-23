@@ -1,6 +1,9 @@
 /*
-An interface is a fully abstract class. It includes a group 
-of abstract methods (methods without a body).
+An interface is a fully abstract class.
+It includes a group of abstract methods (methods without a body).
+It Doesn't contain regular methods.
+All fields are final & static in interface.
+All methods are abstract & static in interface.
 
 We use the interface keyword to create an interface in Java
 
@@ -49,7 +52,6 @@ interface C extends A, B {
 */
 
 interface Language {
-	
 	void getName(String name);
 }
 
