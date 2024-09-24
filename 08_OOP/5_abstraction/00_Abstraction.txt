@@ -1,0 +1,36 @@
+Abstraction in Java is a process of hiding implementation 
+details and showing only essential information to the user. 
+It allows us to focus on what an object does rather than how it does it. 
+There are two ways to achieve abstraction in Java: 
+through Abstract Classes and Interfaces.
+
+
+1. Abstract Class
+-----------------
+
+An abstract class is a class that cannot be instantiated on its own, 
+meaning you cannot create an object of an abstract class. 
+It is used as a blueprint for other classes. It can have both 
+abstract methods (methods without a body) and concrete methods 
+(methods with an implementation).
+    Key Points:
+
+    Can have both abstract and non-abstract methods (concrete methods).
+    Can have constructors, but they cannot be directly used to create objects.
+    Can have instance variables (non-static field), and it can also define methods with implementation.
+    Used for a common base of classes that share methods and properties.
+
+
+2. Interface
+------------
+
+An interface in Java is a blueprint of a class. It is used to achieve 
+100% abstraction (until Java 7). An interface contains only abstract 
+methods (Java 8 allows default and static methods with a body), and 
+the classes that implement the interface must provide the implementation of all these methods.
+    Key Points:
+
+    All methods in an interface are by default public and abstract.
+    Cannot have constructors, instance variables (can have static constants).
+    From Java 8 onward, interfaces can have default and static methods.
+    A class can implement multiple interfaces (supporting multiple inheritance).

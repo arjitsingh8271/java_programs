@@ -1,3 +1,5 @@
+// Member of Inner Class.
+
 class Outer {
 	
 	int x = 10;
@@ -25,14 +27,33 @@ class InnerClass01 {
 
 		Outer o = new Outer();
 		o.outerDisplay();
+		//o.innerDisplay();		// error
 
 		System.out.println();
 
-		Outer.Inner oi = new Outer().new Inner();
+		Outer.Inner oi = o.new Inner();
 		oi.innerDisplay();
+		//oi.outerDisplay();	// error
+
+		System.out.println();
+
+		Outer.Inner oi2 = new Outer().new Inner();
+		oi2.innerDisplay();
+		//oi2.outerDisplay();	// error
 		
 	}
 }
+
+
+/*
+OUTPUT: 10
+		20
+
+		10
+
+		10
+*/
+
 
 /*
 Inner class can access the member of Outer class

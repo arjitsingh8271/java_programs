@@ -1,9 +1,30 @@
+Exception:
+----------
+Exception is an event that distrup the normal flow of the program
+It is an object which is thrown at runtime.
+
+
+Exception Handling:
+------------------
+The EH is a way to handle the run time errors so that 
+the normal flow of the application can be maintained. 
+
+
+Types Error:
+------------
+
+	1. Syntax Error
+	2. Logical Error
+	3. Runtime Error
+
+
+
 Errors and Exception Types
 The table below shows a list of common Error and Exception types in Java:
 
 Error/Exception					Description
 ---------------					-----------
-ArithmeticError					Occurs when a numeric calculation goes wrong
+ArithmeticException				Occurs when a numeric calculation goes wrong
 ArrayIndexOutOfBoundsException	Occurs when trying to access an index number that does not exist in an array
 ClassFormatError				Occurs when a class file cannot be accessed
 ClassNotFoundException			Occurs when trying to access a class that does not exist

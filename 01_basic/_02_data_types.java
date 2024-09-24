@@ -22,25 +22,30 @@ class _02_data_types
 {
 	public static void main(String[] args)
 	{
-		byte a = 1;
-		short b = 3;
-		int c = 3;
-		long d = 124l;
-		float e = 2.3f;
-		double f = 4.3d;
-		char g = 'A';
-		String h = "Hello";
-		boolean i = false;
-
+		byte a = 1;			// Size: 1 byte
+		short b = 3;		// 2 bytes
+		int c = 3;			// 4 bytes
+		long d = 124l;		// 8 bytes
 		System.out.println("byte a: " + a);
 		System.out.println("short b: " + b);
 		System.out.println("int c: " + c);
 		System.out.println("long d: " + d);
+
+
+		float e = 2.3f;		// 4 bytes
+		double f = 4.3d;	// 8 bytes
 		System.out.println("float e: " + e);
 		System.out.println("double f: " + f);
+
+		char g = 'A';		// 2 bytes
 		System.out.println("char g: " + g);
+
+		String h = "Hello";
 		System.out.println("string h: " + h);
+		
+		boolean i = false;
 		System.out.println("boolean i: " + i);
+
 	}
 }
 
