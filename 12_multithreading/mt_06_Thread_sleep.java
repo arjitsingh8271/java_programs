@@ -1,33 +1,25 @@
-class myThread extends Thread
-{
-	myThread(String name)
-	{
+class myThread extends Thread {
+	myThread(String name) {
 		super(name);
 	}
 
-	public void run()
-	{
+	public void run() {
 		int i=1;
 
-		while (true)
-		{
+		while (true) {
 			System.out.println(i++);
-			try
-			{
+			try {
 				Thread.sleep(1000);		// 1000 is in millisecond
 			}
-			catch(InterruptedException e)
-			{
+			catch(InterruptedException e) {
 				System.out.println(e);
 			}
 		}
 	}
 }
 
-class mt_06_Thread_sleep
-{
-	public static void main(String[] args)
-	{
+class mt_06_Thread_sleep {
+	public static void main(String[] args) {
 		myThread t1 = new myThread("Thread-1");
 
 		// methods of Thread class

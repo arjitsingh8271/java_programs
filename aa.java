@@ -1,34 +1,33 @@
-import java.util.*;
+//import MyPackages.mypac2.MultiplicationTable;
 
-class aa
-{
-	public static void main(String[] args)
-	{
-		int a[] = {1,2};
-		System.out.println(a);
+// class aa {
+	
+// 	public static void main(String[] args) {
+		
+// 		MultiplicationTable tab5 = new MultiplicationTable(5, 6);
+// 		tab5.printTable();
 
-		int b[] = new int[3];
-		b[0]=1;
-		b[1]=2;
-		System.out.println(b);
+// 		System.out.println();
 
-		char c[] = {'a','b'};
-		System.out.println(c);
+// 		System.out.println(tab5.getNum());
+// 		System.out.println(tab5.getUpto());
 
-		String s[] = {"arjit","ram"};
-		System.out.println(s);
+// 	}
+// }
 
-		float f[] = {1.22f,2.1f};
-		System.out.println(f);
-	}
-}
+// import MyPackages.Maths.Calc;
+
+// class aa {
+	
+// 	public static void main(String[] args) {
+		
+// 		Calc arithmetic = new Calc(12, 5);
+// 		System.out.println(arithmetic.add());
+// 		System.out.println(arithmetic.sub());
+// 		System.out.println(arithmetic.div());
+// 		System.out.println(arithmetic.mul());
+// 		System.out.println(arithmetic.rem());
 
 
-
-/*
-OUTPUT:	[I@d716361
-		[I@6ff3c5b5
-		ab
-		[Ljava.lang.String;@3764951d
-		[F@4b1210ee
-*/
+// 	}
+// }

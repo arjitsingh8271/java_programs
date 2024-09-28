@@ -1,10 +1,7 @@
 // Resources or Shared Data
-class shareData
-{
-	void display(String s1)
-	{
-		for(int i=0 ; i<s1.length() ; i++)
-		{
+class shareData {
+	void display(String s1) {
+		for(int i=0 ; i<s1.length() ; i++) {
 			System.out.print(s1.charAt(i));
 		}
 	}
@@ -12,34 +9,28 @@ class shareData
 
 
 // Thread 1
-class myThread_1 extends Thread
-{
+class myThread_1 extends Thread {
 	shareData d1;
 
-	myThread_1(shareData data)
-	{
+	myThread_1(shareData data) {
 		d1=data;
 	}
 
-	public void run()
-	{
+	public void run() {
 		d1.display("Hello_World_");
 	}
 }
 
 
 // Thread 2
-class myThread_2 extends Thread
-{
+class myThread_2 extends Thread {
 	shareData d2;
 
-	myThread_2(shareData data)
-	{
+	myThread_2(shareData data) {
 		d2=data;
 	}
 
-	public void run()
-	{
+	public void run() {
 		d2.display("Welcome_to_Java.");
 	}
 
@@ -47,10 +38,8 @@ class myThread_2 extends Thread
 
 
 // Main class
-class mt_07_Thread_without_Synchronization
-{
-	public static void main(String[] args)
-	{
+class mt_07_Thread_without_Synchronization {
+	public static void main(String[] args) {
 		shareData d = new shareData();
 
 		myThread_1 t1 = new myThread_1(d);

@@ -1,11 +1,8 @@
-class ATM
-{
-	synchronized void checkBalance(String name)
-	{
+class ATM {
+	synchronized void checkBalance(String name) {
 		System.out.print(name + " Checking ");
 
-		try
-		{
+		try {
 			Thread.sleep(1000);
 		}
 		catch (Exception e){}
@@ -13,12 +10,10 @@ class ATM
 		System.out.println("Balance");
 	}
 
-	synchronized void withdrow(String name, int amount)
-	{
+	synchronized void withdrow(String name, int amount) {
 		System.out.print(name + " Withdrowing ");
 
-		try
-		{
+		try {
 			Thread.sleep(1000);
 		}
 		catch (Exception e){}
@@ -28,36 +23,30 @@ class ATM
 }
 
 
-class customer extends Thread
-{
+class customer extends Thread {
 	String name;
 	int amount;
 	ATM atm;
 
-	customer(String name, int amount, ATM atm)
-	{
+	customer(String name, int amount, ATM atm) {
 		this.name = name;
 		this.amount = amount;
 		this.atm = atm;
 	}
 
-	void useATM()
-	{
+	void useATM() {
 		atm.checkBalance(name);
 		atm.withdrow(name, amount);
 	}
 
-	public void run()
-	{
+	public void run() {
 		useATM();
 	}
 }
 
 
-class qn_01_atm_machine_challenge
-{
-	public static void main(String[] args)
-	{
+class qn_01_atm_machine_challenge {
+	public static void main(String[] args) {
 		ATM atm = new ATM();
 
 		customer c1 = new customer("Rahul", 1000, atm);

@@ -20,11 +20,12 @@ multiple threads modify an ArrayList concurrently, it must be synchronized exter
 
 import java.util.ArrayList;
 
-class ArrayList_01 {
+class L1_ArrayList_01 {
 	
 	public static void main(String[] args) {
 		
 		// Create an ArrayList
+		// or List<String> fruits = new ArrayList<>();
 		ArrayList<String> fruits = new ArrayList<>();
 
        	// Add elements to the ArrayList

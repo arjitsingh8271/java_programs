@@ -32,11 +32,18 @@ class WrapperClasses {
 		int a1 = 1;			// Primitive Datatype
 		Integer a2 = 1;		// Autoboxing: int to Integer
 		int a3 = a2;		// Unboxing: Integer to int
-		
+
 		String str = "123";
 		System.out.println(str.getClass());	// class java.lang.String
 		Integer obj = Integer.valueOf(str);
 		System.out.println(obj.getClass()); // class java.lang.Integer
+
+		Integer a4 = 2;
+
+		System.out.println(a2 == a4);		// false
+		System.out.println(a2.equals(a4));	// false
+
+
 
 		boolean isTrue = true;
 		Boolean isFalse = false;

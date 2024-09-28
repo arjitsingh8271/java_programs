@@ -21,7 +21,7 @@ traverse the list to reach a specific element.
 
 import java.util.LinkedList;
 
-class LinkedList_01 {
+class L2_LinkedList_01 {
 	
 	public static void main(String[] args) {
 		

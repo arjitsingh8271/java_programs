@@ -18,19 +18,15 @@ java JVM have its own scheduler.
 */
 
 /*
-class myThread extends Thread
-{
-	myThread (String name)
-	{
+class myThread extends Thread {
+	myThread (String name) {
 		super(name);
 		setPriority(Thread.MIN_PRIORITY+2);		
 	}
 }
 
-class mt_05_Thread_setPriority
-{
-	public static void main(String[] args)
-	{
+class mt_05_Thread_setPriority {
+	public static void main(String[] args) {
 		myThread t1 = new myThread("Thread-1");
 
 		// methods of Thread class
@@ -53,18 +49,14 @@ Priority: 3
 
 
 
-class MyRunnable implements Runnable 
-{
-    public void run() 
-    {
+class MyRunnable implements Runnable {
+    public void run() {
         System.out.println("Thread " + Thread.currentThread().getId() + " is running");
     }
 }
 
-public class mt_05_Thread_setPriority 
-{
-    public static void main(String[] args) 
-    {
+public class mt_05_Thread_setPriority {
+    public static void main(String[] args) {
         Thread t1 = new Thread(new MyRunnable());
         Thread t2 = new Thread(new MyRunnable());
 

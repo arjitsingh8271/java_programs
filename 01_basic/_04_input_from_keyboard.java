@@ -1,20 +1,21 @@
 /*
 In util packege we get Scanner class
 In Scanner class we get methods like:
-		nextInt()		read integer
-		nextFloat()		read float
-		nextDouble()	read double
+		nextInt()			read integer
+		nextFloat()			read float
+		nextDouble()		read double
 		
-		next()			read one word
-		nextLine()		read multiple words
+		next()				read one word
+		nextLine()			read multiple words
+		next().charAt(0)	read 1 character
 
 		nextByte()
 		nextShort()
 		nextLong()
 		nextBoolean()
 
-		hasNextInt()	read is a int? value and return true or false
-		hasNextFloat()	read is a float? value and return true or false
+		hasNextInt()		read is a int? value and return true or false
+		hasNextFloat()		read is a float? value and return true or false
 */
 
 import java.lang.*;

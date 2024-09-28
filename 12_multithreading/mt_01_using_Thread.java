@@ -10,31 +10,26 @@ class.
 */
 
 
-class myThread extends Thread
-{
-	public void run()	// overriding run methods
-	{
+class myThread extends Thread {
+	// overriding run methods
+	public void run() {	
 		int i=1;
-		
-		while (true)
-		{
+		// Infinite Loop
+		while (true) {
 			System.out.println(i + " Hello");
 			i++;
 		}
 	}
 }
 
-class mt_01_using_Thread
-{
-	public static void main(String[] args)
-	{
+class mt_01_using_Thread {
+	public static void main(String[] args) {
 		myThread t1 = new myThread();
 		t1.start();		// to start run method
-
-		int i=1;
 		
-		while (true)
-		{
+		int i=1;
+		// Infinite Loop
+		for (; ; ) {
 			System.out.println(i + " World");
 			i++;
 		}

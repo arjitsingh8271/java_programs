@@ -1,21 +1,23 @@
-class myThread extends Thread
-{
-	myThread (String name)
-	{
+class myThread extends Thread {
+	myThread (String name) {
 		super(name);
 	}
 }
 
-class mt_04_Thread_methods
-{
-	public static void main(String[] args)
-	{
+class mt_04_Thread_methods {
+
+	public static void main(String[] args) {
+		// Main thread
+		System.out.println("Name: " +Thread.currentThread().getName());
+		System.out.println("State: " +Thread.currentThread().getState());
+
 		myThread t1 = new myThread("Thread-1");
 		myThread t2 = new myThread("Thread-2");
 
 
 		// methods of Thread class
 
+		System.out.println("State: " + t1.getState());
 		System.out.println("ID: " + t1.getId());
 		System.out.println("Name: " + t1.getName());
 		System.out.println("Priority: " + t1.getPriority());
@@ -35,17 +37,19 @@ class mt_04_Thread_methods
 
 
 /*
-OUTPUT:
+OUTPUT:	Name: main
+		State: RUNNABLE
+		
+		State: NEW
+		ID: 20
+		Name: Thread-1
+		Priority: 5
+		State: RUNNABLE
+		Alive: false
 
-ID: 20
-Name: Thread-1
-Priority: 5
-State: RUNNABLE
-Alive: false
-
-ID: 21
-Name: Thread-2
-Priority: 5
-State: TERMINATED
-Alive: false
+		ID: 21
+		Name: Thread-2
+		Priority: 5
+		State: TERMINATED
+		Alive: false
 */

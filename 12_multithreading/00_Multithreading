@@ -1,0 +1,46 @@
+What is a CPU / Processor?
+--------------------------
+The CPU (Central Processing Unit) is the "brain" of a computer. 
+It performs all the calculations and instructions needed to run programs. 
+Every action you do on a computer—like opening a file, playing a video, 
+or browsing the web—goes through the CPU. 
+It's responsible for processing the data and commands that make things happen on your device.
+
+What is a Process?
+-------------------
+A process is a program that is currently running on your computer. 
+When you open an app, like a web browser or a video player, it becomes a process. 
+A process takes up resources, like memory and CPU time, and runs independently, handling tasks assigned to it.
+
+What is a Core?
+---------------
+A core is a part of the CPU. Modern CPUs have multiple cores, which means they can do multiple things at once. 
+Each core can handle its own tasks independently, so having more cores allows your computer to run many processes simultaneously, improving performance.
+
+What is a Thread?
+-----------------
+A thread is like a smaller unit of a process. Each process can have one or more threads running inside it. 
+Threads share resources within the same process but can perform tasks independently, allowing for more efficient multitasking. 
+For example, in a web browser, one thread might handle loading a webpage while another handles displaying the content.
+
+In summary:
+-----------
+    CPU: The computer’s brain.
+    Process: A running program or app.
+    Core: A part of the CPU that can handle tasks.
+    Thread: A smaller unit of work within a process.
+
+
+STATES OF PROCESS / THREAD
+--------------------------
+1.New:
+	A thread is in this state when it is created but not yet started.
+2.Runnable (Ready):
+	When start() method is called the thread become runnable / ready.
+	It's ready to run and is waiting for CPU time.
+3.Running:
+	The thread is currently being executed by the CPU.
+4.Blocked (Waiting):
+	A thread is in this state when it is wating for a resource or for another thread to perform an action.
+5.Terminated (Dead):
+    The thread has finished its execution either by completing its task or being explicitly terminated.

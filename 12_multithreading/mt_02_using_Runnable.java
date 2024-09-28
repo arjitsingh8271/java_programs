@@ -1,11 +1,8 @@
-class myRunnable implements Runnable
-{
-	public void run()
-	{
+class myRunnable implements Runnable {
+	public void run() {
 		int i=1;
 		
-		while (true)
-		{
+		while (true) {
 			System.out.println(i + " Hello");
 			i++;
 		}
@@ -14,8 +11,7 @@ class myRunnable implements Runnable
 
 class mt_02_using_Runnable
 {
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		//myRunnable mt = new myRunnable();
 		//Thread t1 = new Thread(mt);
 		//t1.start();
@@ -25,8 +21,7 @@ class mt_02_using_Runnable
 
 		int i=1;
 		
-		while (true)
-		{
+		while (true) {
 			System.out.println(i + " World");
 			i++;
 		}

@@ -7,7 +7,7 @@ class java_db_connect {
 
 		try {
 			// Register JDBC driver
-			//Class.forName("com.mysql.jdbc.Driver");
+			// Class.forName("com.mysql.jdbc.Driver");
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
 			// Open a connection
@@ -19,5 +19,5 @@ class java_db_connect {
 			System.out.println("Error");
 			e.printStackTrace();
 		}
-  }
+  	}
 }

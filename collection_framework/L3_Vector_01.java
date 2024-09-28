@@ -22,7 +22,7 @@ This can be more aggressive than the resizing strategy used by ArrayList.
 
 import java.util.Vector;
 
-class Vector_01 {
+class L3_Vector_01 {
 	
 	public static void main(String[] args) {
 		

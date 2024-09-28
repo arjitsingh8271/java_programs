@@ -13,7 +13,7 @@ Legacy Class: Stack is considered a legacy class, and while it is still in use, 
 
 import java.util.Stack;
 
-class Stack_01 {
+class L4_Stack_01 {
 	
 	public static void main(String[] args) {
 		
