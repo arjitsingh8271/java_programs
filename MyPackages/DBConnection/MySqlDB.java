@@ -1,7 +1,9 @@
+package MyPackages.DBConnection;
+
 import java.sql.DriverManager;
 import java.sql.Connection;
 
-class DBConnection {
+public class MySqlDB {
 
 	public static Connection connection;
 
@@ -34,6 +36,6 @@ class DBConnection {
 
   	// // For check 
   	// public static void main(String[] args) {
-  	// 	MyDBConnection.getConnection();
+  	// 	MySqlDB.getConnection();
   	// }
 }

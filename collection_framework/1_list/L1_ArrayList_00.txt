@@ -1,5 +1,42 @@
-All ArrayList Methods:
+ArrayList Collection in Java:
+-----------------------------
+ArrayList is the implementation class of List Interface which is used to store a group of individual objects where duplicate values are allowed. 
+ArrayList internally follows array structure, which means in ArrayList all the elements are stored in contiguous memory locations same as an array, but ArrayList size is not fixed.
 
+ArrayList is not a synchronized class. 
+If any object is synchronized we can access only one thread at a time but if an object is not. synchronized then we can access multiple threads.
+
+
+
+Creating an ArrayList in Java
+Syntax : ArrayList<Type> al = new ArrayList<Type>();
+Here, Type indicates the type of ArrayList.
+
+ArrayList Constructors in Java
+ArrayList<E> al = new ArrayList<E>();
+This constructor is used to create the new ArrayList with a default capacity of 10 and the size of ArrayList is 0.
+
+ArrayList<E> al = new ArrayList<E>(int capacity);
+This constructor is used to create the new ArrayList with a default capacity of 10 and the size of ArrayList is 0.
+
+ArrayList<E> al = new ArrayList<E>(Collection obj);
+This constructor is used to create the new ArrayList by copying the elements of any existing Collection (List, Set).
+
+Points to Remember:
+-------------------
+size means the number of elements that are stored in Collection.
+capacity means the memory allocated for elements.
+<E> is called Generic Parameter type.
+E is the element type that must be a reference type but not any primitive type.
+
+
+Methods of ArrayList: We can use all Collections Method to work with the ArrayList.
+
+
+
+
+All ArrayList Methods:
+----------------------
 A list of all ArrayList methods can be found in the table below.
 
 Some methods use the type of the ArrayList's items as a parameter

@@ -1,0 +1,31 @@
+Vector Collections in Java:
+---------------------------
+Vector is an implemented class of List Interface. 
+Vector class methods are by default synchronized. 
+It is used to store a group of individual objects where duplicate values are allowed.
+
+Vector is exactly similar to ArrayList but ArrayList is not a synchronized class where Vector is a synchronized class. 
+Vector is also called legacy class because it is available from Java 1.0 Version. 
+It is similar to the ArrayList, but with two differences-
+
+1. The vector is synchronized.
+2. Java Vector contains many legacy methods that are not part of a collections framework.
+
+Note: It is recommended to use ArrayList in place of Vector because vectors are not thread-safe and are less efficient.
+
+Creation of Vector
+Syntax : Vector<Type> vector = new Vector<Type>();
+Here, Type indicates the type of Vector.
+
+Vector Constructors
+Vector<E> v = new Vector<E>();
+This constructor creates a single dimension array with a default capacity of 10.
+
+Vector<E> v = new Vector<E>(int capacity);
+This constructor sets a given capacity as a current capacity to a single dimension array.
+
+Vector<E> v = new Vector<E>(Collection obj);
+This constructor is used for migrating one collection with another collection for transferring data.
+
+Methods of Vector
+We can use all Collections Method to work with the LinkedList. We can also use legacy methods like addElement(), removeElement(), setElement(),….

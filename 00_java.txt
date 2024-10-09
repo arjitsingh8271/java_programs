@@ -44,3 +44,19 @@ To check java version
 8. Plural Names for Collections
 	Use Plural Names for Collections
 	ex: List<String> names, Set<Integer> ids, int[] scores
+
+
+--------------------------------------------------
+Coupling: How much work is involved in changing something?
+
+	Coupling is important everywhere:
+		An engine is tightly coupled to a Car.
+		A wheel is looselt coupling to a Car.
+
+	Coupling is even more important in building great software:
+		Only this constant in technology is change.
+			Business requirement change.
+			Frameworks change.
+			Code changes.
+		We want Loose Coupling as much as possible.
+		We want to make fuunctionala changes with as less code change as possible.

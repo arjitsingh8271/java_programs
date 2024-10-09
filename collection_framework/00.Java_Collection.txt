@@ -1,3 +1,31 @@
+What are Collections?
+---------------------
+Collections: It is a mechanism of collecting some group of objects either statically or dynamically. 
+Collections can hold a group of objects. 
+The size of the collection is not fixed, it means when we are inserting and deleting the elements than the size of the collection dynamically increased or decreased. 
+Every collection internally follows data structures and contains predefined functions it means we don't need to write new logic for performing the operations like Insertion, Deletion, Searching, Sorting, etc.
+
+What is a Framework?
+--------------------
+The framework is a semi-finished reusable application that provides some common low-level services for serving reoccurring problems and that can be customized according to our requirements. For example:
+
+The computer is a framework; it can be used by all people according to their requirements.
+Switchboard is a framework it can be used by all people according to their requirement.
+
+
+Java.util package contains several classes that collect homogeneous and heterogeneous objects without size limitation. 
+These classes are usually called collection framework classes. 
+All the collection classes are classified into the following four categories:
+
+1. List: It is used to store a group of individual elements where the elements can be duplicated.
+2. Set: It is used to store a group of individual elements but the elements can’t be duplicated.
+3. Queue: It is used to hold multiple elements prior to processing and is dedicated to storing all the elements where the order of the elements matter.
+4. Map: It is used to store the element in the form of key-value pairs where the keys can’t be duplicated but values can be duplicated.
+
+
+
+
+
 Java Collection: 
 ----------------
 	

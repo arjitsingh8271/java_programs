@@ -1,0 +1,27 @@
+Steps for JDBC (Java DataBase Connection)
+
+	1. Load driver
+	2. Define Connection URL
+	3. Establish Connection
+	4. Create Statement Object
+	5. Execute Query Using Statement
+	6. Process Result
+	7. Close Connection
+
+
+
+
+--------------- For Linux --------------
+
+Download the driver (Google: jdbc postgresql)
+
+Then past the postgresql...jar file in the folder.
+In the same folder write all java-database related code before run code set the CLASSPATH
+
+
+# Run as well as set CLASSPATH
+------------------------------
+1. Compile:
+	javac -cp postgresql-42.2.27.jar YourProgram.java
+2. Run:
+	java -cp postgresql-42.2.27.jar:. YourProgram

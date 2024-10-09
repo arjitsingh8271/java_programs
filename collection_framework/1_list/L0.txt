@@ -1,0 +1,22 @@
+				ArrayList		Linkedlist		Vector		Stack
+				--------------------------------------------------
+Ordered:		Ordered By 		Ordered By 		Ordered By 	Ordered By
+				Insertion		Insertion		Insertion	Insertion
+
+Data 			Growable		Doubly			Growable	Growable
+Structure:		Array 			LinkedList 		Array 		Array
+
+Synchoronized	No				No				Yes			Yes
+
+Duplicate		Yes				Yes				Yes			Yes
+Values:
+
+Null Values:	Yes				Yes				Yes			Yes
+
+Initial			10				NA				10			10
+Capacity:	
+
+Capacity		c*3/2+10		NA				2*c 		2*c
+Increment:
+
+Legacy:			No				No				Yes			Yes

@@ -1,0 +1,25 @@
+Stack Collection in Java:
+-------------------------
+In Java, Stack is a class that falls under the Collection framework that extends the Vector class. 
+The stack is a child class of Vector and implements List Interface. 
+The stack stores a group of objects by using a mechanism called LIFO. 
+LIFE stands for Last In First Out, which means the last inserted element deleted first.
+
+The stack data structure has the two most important operations that are push and pop. 
+The push operation inserts an element into the stack and the pop operation removes an element from the top of the stack.
+
+
+Creation of Stack
+Syntax : Stack<Type> stacks = new Stack<Type>();
+Here, Type indicates the Stack’s type.
+
+Stack Constructor
+public Stack()
+The Stack class contains only the default constructor that creates an empty stack.
+
+Methods of Stack
+We can use all Collection Methods. We can also use legacy methods of Vector Class like addElement(), removeElement(), setelementAt(), etc. But if we want to follow the LIFO mechanism we should use Stack methods like follows:
+
+1. E push(E obj): This method will add new elements to the stack.
+2. E pop(): This method deletes the top element available on Stack.
+3. E peek(): This method just returns the top element available on Stack.

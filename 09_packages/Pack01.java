@@ -5,10 +5,10 @@ The package program file & the main program is in same folder
 |
 |--	09_packages
 	|--mypac2
-		↳MultiplicationTable.java
+	|	↳MultiplicationTable.java
 	↳Pack02.java
 
-
+ 
 javac Pack01.java
 java pac01
 */
