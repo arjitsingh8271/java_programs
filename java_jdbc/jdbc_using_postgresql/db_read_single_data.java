@@ -3,7 +3,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.Connection;
 
-class db_fetch_data {
+class db_read_single_data {
 
 	public static void main(String[] args) {
 
@@ -39,3 +39,12 @@ class db_fetch_data {
 
   	}
 }
+
+
+
+/*
+OUTPUT:
+
+Connect!.
+Arjit
+*/

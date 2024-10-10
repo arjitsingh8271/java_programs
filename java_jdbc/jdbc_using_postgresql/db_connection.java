@@ -15,7 +15,7 @@ class db_connection {
 
 			// Open a connection
 			Connection con = DriverManager.getConnection(url, uname, pswd);
-			System.out.println("Connect!.");
+			System.out.println("Connected!.");
 
 			con.close();
 		}
@@ -28,3 +28,6 @@ class db_connection {
 
   	}
 }
+
+
+// Connected!.

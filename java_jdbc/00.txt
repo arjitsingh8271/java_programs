@@ -1,19 +1,20 @@
 Steps for JDBC (Java DataBase Connection)
-
-	1. Load driver
-	2. Define Connection URL
-	3. Establish Connection
-	4. Create Statement Object
-	5. Execute Query Using Statement
-	6. Process Result
-	7. Close Connection
+	
+	1. Import package (import java.sql.*;)
+	2. Load driver	(.jar file)
+	3. Register Driver (Optional)
+	4. Create/Define Connection
+	5. Create Statement Object
+	6. Execute Query Using Statement
+	7. Process Result
+	8. Close Connection
 
 
 
 
 --------------- For Linux --------------
 
-Download the driver (Google: jdbc mysql)
+Download the driver (Google: jdbc mysql or jdbc postgresql)
 
 Then past the mysql...jar file in the folder.
 In the same folder write all java-database related code before run code set the CLASSPATH

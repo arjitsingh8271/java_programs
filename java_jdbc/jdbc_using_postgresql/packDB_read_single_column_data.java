@@ -1,17 +1,17 @@
-import MyPackages.DBConnection.PostgreSqlDB;
+import DBConnection.PostgreSqlDB;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import static MyPackages.DBConnection.PostgreSqlDB.connection;
+import static DBConnection.PostgreSqlDB.con;
 
 
-public class packDB_fetch_single_column_data {
+public class packDB_read_single_column_data {
     public static void main(String[] args) throws SQLException {
         PostgreSqlDB.getConnection();
 
-        Statement st = connection.createStatement();
+        Statement st = con.createStatement();
         ResultSet rs = st.executeQuery("select name, dept, city from student where roll=7");
         rs.next();
 
@@ -21,6 +21,6 @@ public class packDB_fetch_single_column_data {
 
         System.out.println("Name: " +name +" Dept: " +dept +" City: " +city);
 
-        connection.close();
+        con.close();
     }
 }
