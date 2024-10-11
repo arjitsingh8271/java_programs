@@ -34,3 +34,95 @@ the classes that implement the interface must provide the implementation of all 
     Cannot have constructors, instance variables (can have static constants).
     From Java 8 onward, interfaces can have default and static methods.
     A class can implement multiple interfaces (supporting multiple inheritance).
+
+
+
+1. Definition and Purpose
+-------------------------
+Abstract Class: 
+A class that may contain both abstract methods (methods without a body) and concrete methods (methods with a body). It is designed to be a base class that other classes inherit from, sharing common logic but allowing customization by overriding methods.
+
+Interface: 
+A blueprint that defines only abstract methods (until Java 8). It allows the implementation of multiple unrelated classes, specifying a contract for classes to follow. Interfaces in Java are designed to achieve full abstraction and multiple inheritance.
+
+
+2. Method Implementation
+------------------------
+Abstract Class:
+Can have both abstract methods (no body) and concrete methods (with body).
+Abstract methods need to be overridden by the subclass.
+Can provide default behavior for subclasses.
+
+Interface:
+Before Java 8: Contains only abstract methods (no body).
+Since Java 8: Can contain default methods (with body) and static methods.
+Since Java 9: Can have private methods.
+
+
+3. Inheritance
+---------------
+Abstract Class:
+A class can inherit from only one abstract class (single inheritance).
+Cannot achieve multiple inheritance of abstract classes.
+
+Interface:
+A class can implement multiple interfaces (multiple inheritance).
+Interfaces allow a class to follow multiple contracts.
+
+
+4. Access Modifiers
+--------------------
+Abstract Class:
+Can have protected, public, or private methods and members.
+Can define instance variables and constants.
+
+Interface:
+Methods are public by default (abstract, static, or default methods).
+Fields are public, static, and final by default (constants).
+
+
+5. Constructor
+---------------
+Abstract Class:
+Can have a constructor, which is called when a subclass is instantiated to initialize fields.
+
+Interface:
+Cannot have a constructor, as it cannot be instantiated.
+
+
+6. Use Case
+-----------
+Abstract Class:
+Used when you want to provide shared behavior between a group of related classes but also want to leave some methods for implementation by subclasses.
+
+Interface:
+Used when you want to define a contract that multiple classes can follow regardless of their relationship.
+
+
+7. Multiple Inheritance
+-----------------------
+Abstract Class:
+Supports single inheritance only (a class can extend only one abstract class).
+
+Interface:
+Supports multiple inheritance (a class can implement multiple interfaces).
+
+
+8. When to Use
+---------------
+Abstract Class:
+When you have a base class with common logic for related classes.
+When you need to define state (fields) and behavior that can be shared among subclasses.
+
+Interface:
+When you need to provide a common contract for unrelated classes to implement.
+When you need to achieve multiple inheritance.
+
+
+9. Java 8 Enhancements
+----------------------
+Abstract Class: Remained the same after Java 8, with no major changes in its functionality.
+
+Interface: Java 8 introduced:
+Default methods: Methods with a body that can provide a default implementation.
+Static methods: Methods that belong to the interface and can be invoked without an instance.

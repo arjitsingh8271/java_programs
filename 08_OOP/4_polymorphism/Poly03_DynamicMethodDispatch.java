@@ -1,3 +1,10 @@
+/*
+Dynamic Method Dispatch (also known as runtime polymorphism or method overriding) 
+is a mechanism in Java where a method call to an overridden method is resolved at 
+runtime rather than at compile time.
+
+*/
+
 class Animal {
 	public void sound() {
 		System.out.println("Having Sound");
@@ -40,3 +47,13 @@ class Poly03_DynamicMethodDispatch {
 
 	}
 }
+
+
+
+/*
+Explanation:
+Here, animalRef is a reference of type Animal (the superclass).
+However, animalRef holds an object of type Dog or Cat (the subclasses).
+Even though animalRef is of type Animal, the method from the actual object type (either Dog or Cat) is called.
+This is because Java uses dynamic method dispatch to decide which method to invoke at runtime.
+*/

@@ -1,7 +1,9 @@
-import game.GameRunner;
-import game.MarioGame;
-import game.SuperContraGame;
-import game.PacManGame;
+// import game.GameRunner;
+// import game.MarioGame;
+// import game.SuperContraGame;
+// import game.PacManGame;
+
+import game.*;
 
 class AppGaming {
 	

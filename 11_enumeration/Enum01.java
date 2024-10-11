@@ -1,5 +1,9 @@
 /*
+Enum 'Enumeration' is a special data type that allows you to define a fixed set of constants. 
+It is useful when you need to represent a limited set of values, such as days of week, colors, or directions.
 
+Enum is a class but we can't extended with other class.
+We can create Methods, Constructor, Variables.
 
 */
 
