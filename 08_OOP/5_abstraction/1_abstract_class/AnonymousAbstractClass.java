@@ -7,39 +7,24 @@ possible to define a constructor for an anonymous class.
 Its name is decided by the java compiler.
 */
 
-class My {
-	void display() {
-		System.out.println("My Class");
-	}
+
+abstract class My {
+	abstract void display();
 }
 
-class Outer {
-	
-	void outerDisplay() {
+// interface My {
+// 	void display();
+// }
 
-		// Anonymous Inner Class
-		My m = new My() {
 
-			void display() {
-				System.out.println("Hello");
-			}
-		};
-
-		m.display();
-	}
-}
-
-class InnerClass03_AnonymousInnerClass {
+class AnonymousAbstractClass {
 	
 	public static void main(String[] args) {
-
-		Outer o = new Outer();
-		o.outerDisplay();
 
 		// Anonymous Inner Class
 		My obj = new My() {		// this is the object of Anonymous Class
 			void display() {
-				System.out.println("World.");
+				System.out.println("Hello World.");
 			}
 		};
 
@@ -49,6 +34,5 @@ class InnerClass03_AnonymousInnerClass {
 
 
 /*
-OUTPUT: Hello
-		World.
+OUTPUT: Hello World.
 */
