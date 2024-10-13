@@ -5,39 +5,43 @@ Java provides the synchronized keyword to control access to critical sections.
 */
 
 // Resources or Shared Data
-class shareData {
-	synchronized void display(String s1) {
-		for(int i=0 ; i<s1.length() ; i++) {
-			System.out.print(s1.charAt(i));
-		}
+class Counter {
+	int count;
+
+	public synchronized void incre() {
+		count++;
 	}
 }
 
 
 // Thread 1
 class myThread_1 extends Thread {
-	shareData d1;
+	Counter c1;
 
-	myThread_1(shareData data) {
-		d1=data;
+	myThread_1(Counter data) {
+		c1=data;
 	}
 
 	public void run() {
-		d1.display("Hello_World_");
+		for(int i=0; i<1000; i++) {
+			c1.incre();
+		}
 	}
 }
 
 
 // Thread 2
 class myThread_2 extends Thread {
-	shareData d2;
+	Counter c2;
 
-	myThread_2(shareData data) {
-		d2=data;
+	myThread_2(Counter data) {
+		c2=data;
 	}
 
 	public void run() {
-		d2.display("Welcome_to_Java.");
+		for(int i=0; i<1000; i++) {
+			c2.incre();
+		}
 	}
 
 }
@@ -46,15 +50,30 @@ class myThread_2 extends Thread {
 // Main class
 class mt_08_Thread_with_Synchronization {
 	public static void main(String[] args) {
-		shareData d = new shareData();
+		
+		Counter c = new Counter();
 
-		myThread_1 t1 = new myThread_1(d);
-		myThread_2 t2 = new myThread_2(d);
+		myThread_1 t1 = new myThread_1(c);
+		myThread_2 t2 = new myThread_2(c);
 
 		t1.start();
 		t2.start();
+
+		
+		try { 
+			t1.join();	// for main to wait for t1 & t2
+			t2.join();
+		} catch (InterruptedException e) {System.out.println(e);}
+
+
+		System.out.println(c.count);
 	}
 }
 
 
-// OUTPUT: Hello_World_Welcome_to_Java.
+/*
+2000
+2000
+2000
+Always 2000
+*/

@@ -4,13 +4,12 @@
 
 
 interface A {
-	
 	void show();
+	void display();
 }
 
 interface B extends A {
 	
-	void display();
 }
 
 class C implements B {

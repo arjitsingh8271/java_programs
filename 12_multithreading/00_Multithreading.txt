@@ -1,3 +1,10 @@
+Why Runnable?
+-------------
+Because when we extends Thread class, we can't extends other class because java does'n support multiple inheritance.
+So, Runnable is an interface when we implements the Runnable interface we can implements other interfaces.
+
+
+
 What is a CPU / Processor?
 --------------------------
 The CPU (Central Processing Unit) is the "brain" of a computer. 

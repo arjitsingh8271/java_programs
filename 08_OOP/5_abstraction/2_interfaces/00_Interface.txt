@@ -1,0 +1,21 @@
+
+
+
+Types of Interface
+------------------
+1. Normal Interface: When we have multiple methods in Interface is Known as Normal Interface.
+interface A {
+	void show();
+	void display();	
+}
+
+2. Functional Interface: When we have only one methods in Interface is Known as Functional Interface.
+interface A {
+	void show();
+	
+}
+
+3. Marker Interface: A blank Interface is Known as Marker Interface.
+interface A {
+
+}
