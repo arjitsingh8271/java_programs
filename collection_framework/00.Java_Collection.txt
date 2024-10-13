@@ -1,9 +1,10 @@
-What are Collections?
+What are Collection?
 ---------------------
-Collections: It is a mechanism of collecting some group of objects either statically or dynamically. 
+Collection: It is a mechanism of collecting some group of objects either statically or dynamically. 
 Collections can hold a group of objects. 
 The size of the collection is not fixed, it means when we are inserting and deleting the elements than the size of the collection dynamically increased or decreased. 
 Every collection internally follows data structures and contains predefined functions it means we don't need to write new logic for performing the operations like Insertion, Deletion, Searching, Sorting, etc.
+It works with Wrapper Classes.
 
 What is a Framework?
 --------------------
@@ -23,6 +24,9 @@ All the collection classes are classified into the following four categories:
 4. Map: It is used to store the element in the form of key-value pairs where the keys can’t be duplicated but values can be duplicated.
 
 
+Collection API :-	Concep
+Collections :- 		'Class'
+Collection :- 		'Interface'
 
 
 
@@ -44,25 +48,25 @@ NOTE: (Interface), [Class]
 			[ArrayList]
 			[LinkedList]
 			[Vector]
-  				[Stack]
+  				[Stack] -- 'LIFO Principle'
 
   		(Queue)
   			[PriorityQueue]
   			(Deque)
   				[ArrayDeque]
 
-  		(Set)
-  			[HashSet]
-  			[LinkedHashSet]
+  		(Set) -- 'Unique + No Index + Unorder'
+  			[HashSet] -- 'Unique + No Index + Unorder'
+  			[LinkedHashSet] -- 'Unique + No Index + Input Order'
   			(SortedSet)
-  				[TreeSet]
+  				[TreeSet] -- 'Unique + No Index + Sorted Order'
 
 ---------------------------------
 
-(Map)
+(Map) -- 'Key Value pairs'
 	[HashMap]
 	[LinkedHashMap]
-	[HashTable]
+	[HashTable]	-- 'Same as HashMap + Synchronized'
 	(SortedMap)
 		[TreeMap]
 

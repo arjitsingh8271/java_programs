@@ -19,7 +19,8 @@ Automatic Doubling: By default, when a Vector needs to grow, it doubles its size
 This can be more aggressive than the resizing strategy used by ArrayList.
 */
 
-
+import java.util.Collection;
+import java.util.List;
 import java.util.Vector;
 
 class L3_Vector_01 {
@@ -27,6 +28,8 @@ class L3_Vector_01 {
 	public static void main(String[] args) {
 		
 		// Create an Vector
+		//Collection<String> fruits = new Vector<>();
+		//List<String> fruits = new Vector<>();
 		Vector<String> fruits = new Vector<>();
 
        	// Add elements to the Vector

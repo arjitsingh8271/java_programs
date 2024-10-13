@@ -1,6 +1,5 @@
 /*
-wrapper classes are used to convert primitive data types (such as int, char, etc.) 
-into objects.
+wrapper classes are used to convert primitive data types (such as int, char, etc.) into objects.
 Wrapper classes are used when an object reference is required, like when working with collections 
 (e.g., ArrayList, HashMap), as collections only work with objects, not primitive data types.
 Primitive datatypes cannot be null, but their wrapper classes can.

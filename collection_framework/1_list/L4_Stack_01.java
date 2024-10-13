@@ -11,13 +11,18 @@ Legacy Class: Stack is considered a legacy class, and while it is still in use, 
 */
 
 
+import java.util.Collection;
+import java.util.List;
 import java.util.Stack;
+
 
 class L4_Stack_01 {
 	
 	public static void main(String[] args) {
 		
 		// Create a Stack
+		//Collection<Integer> s = new Stack<>();
+		//List<Integer> s = new Stack<>();
 		Stack<Integer> s = new Stack<>();
 
 		// Add / push element

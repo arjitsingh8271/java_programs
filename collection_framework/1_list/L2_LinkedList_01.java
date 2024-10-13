@@ -19,13 +19,18 @@ traverse the list to reach a specific element.
 */
 
 
+import java.util.Collection;
+import java.util.List;
 import java.util.LinkedList;
+
 
 class L2_LinkedList_01 {
 	
 	public static void main(String[] args) {
 		
 		// Create a LinkedList
+		//Collection<String> fruits = new LinkedList<>();
+		//List<String> fruits = new LinkedList<>();
 		LinkedList<String> fruits = new LinkedList<>();
 
 		// Add elements to the LinkedList
