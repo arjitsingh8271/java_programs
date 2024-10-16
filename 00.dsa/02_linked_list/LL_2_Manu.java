@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class SinglyLL_2_Manu {
+class LL_2_Manu {
 	
 	static class Node {
 
@@ -127,7 +127,7 @@ class SinglyLL_2_Manu {
 
 		Scanner sc = new Scanner(System.in);
 
-		SinglyLL_2_Manu ll = new SinglyLL_2_Manu();
+		LL_2_Manu ll = new LL_2_Manu();
 		
 		char ch;
 

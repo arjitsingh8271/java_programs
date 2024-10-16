@@ -1,0 +1,49 @@
+SPRING Framework
+----------------
+
+A framework is defined as an abstraction layer on top of the existing technologies and concepts of Java.
+
+
+Annotations
+-----------
+Annotations are a form of metadata (data about data) added to a Java source file. 
+They provide additional information about the program to the compiler, but are not part of the program itself. 
+Annotations are used by frameworks and libraries to simplify integration with client code.
+
+Type of Annotations:-
+@override: it indicates that a method is intended to override a method in a superclass or implement an interface method. 
+It helps the compiler catch errors when a method does not actually override anything due to issues like incorrect method signatures or method name mismatches.
+@Component: Marks a class as a Spring bean. The container automatically detects and registers it as a bean.
+@Autowired: Injects a dependency automatically.
+@Service: Marks a class as a service (specialization of @Component).
+@Repository: Marks a class as a Data Access Object (DAO), used for database interactions.
+@Controller: Marks a class as a Spring MVC controller (for web applications).
+@Configuration: Indicates that the class contains Spring bean definitions (used to define Java-based Spring configuration).
+@Bean: Used within @Configuration classes to define beans programmatically.
+e.t.c
+
+
+IOC - 'Inversion of Control'
+----------------------------
+It is concept for handiling 'Creating, Managing, Destroying Object'.
+It is a Design Principle.
+It create the object in a container by using 'Aplication Context'.
+The container is knows as 'IOC Container'
+Only those Object will be created will you have @component on top of your Class.
+
+
+DI - 'Dependincy Injection'
+---------------------------
+It is actual implementation of IOC.
+It is a Design Pattern.
+It means someone else is injecting object in our application that someone else is Spring
+
+Three techniques for achive DI :
+	1. Constructor Injection
+	2. Setter Injection
+	3. Field Injection
+
+
+
+'Spring' is responsible of create an Object.
+Any Object is created, manage by Spring is called 'Beans'

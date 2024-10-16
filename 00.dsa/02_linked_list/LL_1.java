@@ -1,13 +1,15 @@
-class SinglyLL_1 {
+// Linked list is also known as Singly Linked list
+
+class LL_1 {
 	
 	static class Node {
 	
 		int data;
 		Node next;
 
-		Node(int date) {
+		Node(int data) {
 
-			this.data = date;
+			this.data = data;
 			this.next = null;
 		}
 	}
@@ -19,7 +21,7 @@ class SinglyLL_1 {
 		Node new_node = new Node(data);	//step-1 : Creating a new node
 
 		if(head == null)				//step-2 : Checking Head is empty
-			head = new_node;				//step-2.1 : If empty then head = new node 
+			head = new_node;			//step-2.1 : If empty then head = new node 
 		else {
 
 			new_node.next = head;		//step-3 : If not empty then new node next = head
@@ -116,7 +118,7 @@ class SinglyLL_1 {
 
 	public static void main(String[] args) {
 
-		SinglyLL_1 ll = new SinglyLL_1();
+		LL_1 ll = new LL_1();
 
 		System.out.println("insertAtBegin(): ");
 		ll.insertAtBegin(10);

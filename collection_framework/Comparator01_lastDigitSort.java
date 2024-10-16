@@ -33,6 +33,8 @@ class Comparator01_lastDigitSort {
 			}
 		};
 
+		// Comparator<Integer> com = (i,j) -> i%10 > j%10 ? 1 : -1;		// Lambda Expresion
+
 
 		Collections.sort(num, com);
 
