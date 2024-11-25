@@ -3,7 +3,7 @@ Key Characteristics of ArrayList:
 ---------------------------------
 
 Dynamic Size: Unlike arrays, ArrayList can dynamically resize 
-itself when elements are added or removed.
+itself when elements are added or removed & its default capacity is 10.
 
 Indexed Access: ArrayList allows random access to elements, 
 meaning you can access any element in constant time (O(1)).
@@ -21,6 +21,7 @@ multiple threads modify an ArrayList concurrently, it must be synchronized exter
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Arrays;
 
 class L1_ArrayList_01 {
 	
@@ -29,6 +30,7 @@ class L1_ArrayList_01 {
 		// Create an ArrayList
 		//Collections<String> fruits = new ArrayList<>();
 		//List<String> fruits = new ArrayList<>();
+		//ArrayList<String> fruits = new ArrayList<>(100);	// with initial capacity 100
 		ArrayList<String> fruits = new ArrayList<>();
 
        	// Add elements to the ArrayList
@@ -36,18 +38,26 @@ class L1_ArrayList_01 {
        	fruits.add("Banana");
        	fruits.add("Cherry");
 
-		// Access an 1 element
+		// Access an element
 		System.out.println(fruits.get(1));		// Banana
 
 		// Access all element
 		System.out.println(fruits);				// [Apple, Banana, Cherry]
 
-		// Update an element
-		fruits.set(1, "Mango");
-		System.out.println(fruits);				// [Apple, Mango, Cherry]
+		// Add an element at index 2
+		fruits.add(2, "Orange");
+		System.out.println(fruits);				// [Apple, Banana, Orange, Cherry]
 
-		// Remove an element
+		// Update/Replace an element
+		fruits.set(1, "Mango");
+		System.out.println(fruits);				// [Apple, Mango, Orange, Cherry]
+
+		// Remove an element by value
 		fruits.remove("Apple");
+		System.out.println(fruits);				// [Mango, Orange, Cherry]
+
+		// Remove an element by index
+		fruits.remove(1);
 		System.out.println(fruits);				// [Mango, Cherry]
 
 		// Check the Size
@@ -69,6 +79,20 @@ class L1_ArrayList_01 {
 		for (String list : fruits) {
     		System.out.println(list);
 		}
+
+
+		// Creating an list with the help of Arrays.
+		// in this we can't add or remove element
+		// but can update/replace an element
+		List<String> str = Arrays.asList("one", "two", "four");
+		System.out.println(str);		// [one, two, four]
+		str.set(2, "three");
+		System.out.println(str);		// [one, two, three]
+
+		// now we can add & remove
+		List<String> str2 = new ArrayList<>(str);
+		str2.add("four");
+		System.out.println(str2);		// [one, two, three, four]
 	}
 }
 
