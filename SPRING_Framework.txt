@@ -27,10 +27,24 @@ IOC - 'Inversion of Control'
 ----------------------------
 It is concept for handiling 'Creating, Managing, Destroying Object'.
 It is a Design Principle.
-It create the object in a container by using 'Aplication Context'.
+Spring Framework comes with 2 IOC Containers:
+To create the object in a container by using
+1. BeanFactory (Basic version of IOC Container)
+2. AplicationContext (Adv. & extend BeanFactory)
+AplicationContext it is a Interface.
 The container is knows as 'IOC Container'
 Only those Object will be created will you have @component on top of your Class.
+IOC Container can configure by:
+1. ClasspathXMLApplicationContext
+2. AnnotationConfigApplicationContext
+3. FileSystemXMLApplicationContext
+4. WebApplicationContext
+These all are class inplimens AplicationContext
 
+1. ClasspathXMLApplicationContext: Loads bean definations from an XML file in the classpath.
+2. AnnotationConfigApplicationContext: Loads bean definations from Java-based configuration (annotated with @Configuration).
+3. FileSystemXMLApplicationContext: Loads bean definations from an XML file from the file system.
+4. WebApplicationContext: A specialized version for web-based application.
 
 DI - 'Dependincy Injection'
 ---------------------------
@@ -41,8 +55,22 @@ It means someone else is injecting object in our application that someone else i
 Three techniques for achive DI :
 	1. Constructor Injection
 	2. Setter Injection
-	3. Field Injection
+	3. Field/Property Injection
 
+
+Bean Scope
+----------
+Scop refers to lifecycle of a bean
+How long does it live?
+How many instances are created?
+How is it shared?
+	Type of Beans Scope:
+		1. singleton (if two variable shared same memory location)
+		2. prototype (if two variable shared different memory location)
+	For web
+		3. request
+		4. session
+		5. global-session
 
 
 'Spring' is responsible of create an Object.
