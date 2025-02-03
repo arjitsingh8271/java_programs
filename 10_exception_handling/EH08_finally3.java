@@ -1,7 +1,7 @@
 import java.io.FileInputStream;
 import java.io.IOException;
 
-class EH_finally3 {
+class EH08_finally3 {
     public static void main(String[] args) {
         FileInputStream f = null; 	// Declare outside try block
 

@@ -1,4 +1,4 @@
-class EH_finally2 {
+class EH07_finally2 {
     public static int testFinally() {
         try {
             return 10;

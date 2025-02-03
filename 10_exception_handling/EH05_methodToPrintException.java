@@ -1,4 +1,4 @@
-class EH_methodToPrintException {
+class EH05_methodToPrintException {
 	public static void main(String[] args) {
 		try {
 			int num = 10 / 0;

@@ -18,6 +18,51 @@ Types Error:
 	3. Runtime Error
 
 
+Hierarchy of Exceptions Class
+-----------------------------
+
+java.lang.Object
+	↳ java.lang.Throwable
+		↳ java.lang.Error (Unchecked Exceptions / Runtime Exception)
+			↳ Assertion Error
+			↳ VirtualMachineError
+				↳ StsckOverflowException
+				↳ OutOfMemoryException
+			↳ Linkage Error
+				↳ VerityEror
+				↳ ClassFormatError
+				↳ NoClassDefFoundError
+			...
+		↳ java.lang.Exception
+			↳ java.io.IOExcepton
+				↳ java.io.FileNotFoundException
+				↳ java.io.EOFException
+				↳ java.io.InterruptedIOException
+			↳ java.sql.SQLException
+			↳ NoSuchMethodException
+			↳ RemoteException
+			↳ InterruptedException
+			↳ java.lang.RuntimeException (Unchecked Exceptions / Runtime Exception )
+				↳ java.lang.ArithmeticException
+				↳ java.lang.ClassCastException
+				↳ java.lang.NullPointerException
+				↳ java.lang.IndexOutOfBoundsException
+					↳ ArrayIndexOutOfBoundException
+					↳ StringIndexOutOfBoundException
+				↳ java.lang.IllegalArgumentExceptionException
+					↳ NumberFormatException
+				↳ IllegalStateException
+				↳ UnsupportedOperationException
+				↳ ConcurrentModificationException
+				↳ SecurityException
+				↳ MissingResourceException
+				↳ InputMismatchException
+				↳ EmptyStackException
+				↳ NoSuchElementException
+			
+			...
+
+
 
 Errors and Exception Types
 The table below shows a list of common Error and Exception types in Java:

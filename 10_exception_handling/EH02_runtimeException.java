@@ -6,7 +6,7 @@ Runtime Exception (Unchecked Exception):
 */
 
 /*
-class EH_runtimeException {
+class EH02_runtimeException {
 	public static void main(String[] args) {
 		int num = 10/0;
 		System.out.println(num);
@@ -22,7 +22,7 @@ because the flow of the programe skiped the printing part
 */
 
 
-class EH_runtimeException {
+class EH02_runtimeException {
 	public static void main(String[] args) {
 		try {
 			int num = 10/0;

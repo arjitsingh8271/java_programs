@@ -9,7 +9,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 /*
-class EH_throws {
+class EH12_throws1 {
 
 	static void readFile() throws FileNotFoundException {
 		FileInputStream file = new FileInputStream("abc.txt");
@@ -29,7 +29,7 @@ class EH_throws {
 
 
 
-class EH_throws1 {
+class EH12_throws1 {
 
 	static void readFile() throws FileNotFoundException {
 		FileInputStream file = new FileInputStream("abc.txt");

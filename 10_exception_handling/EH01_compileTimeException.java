@@ -9,7 +9,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /*
-class EH_compileTimeException {
+class EH01_compileTimeException {
 	public static void main(String[] args) {
 		
 		FileInputStream file = new FileInputStream("abc.txt");
@@ -26,7 +26,7 @@ EH_compileTimeException.java:13: error: unreported exception FileNotFoundExcepti
 */
 
 
-class EH_compileTimeException {
+class EH01_compileTimeException {
 	public static void main(String[] args) {
 		try {
 			FileInputStream file = new FileInputStream("abc.txt");

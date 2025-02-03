@@ -7,7 +7,7 @@ Note:
 */
 
 /*
-class EH_finally {
+class EH06_finally1 {
 	public static void main(String[] args) {
 		try {
 			System.out.println(10/2);	// 5
@@ -23,7 +23,7 @@ class EH_finally {
 */
 
 
-class EH_finally {
+class EH06_finally1 {
 	public static void main(String[] args) {
 		try {
 			System.out.println(10/0);

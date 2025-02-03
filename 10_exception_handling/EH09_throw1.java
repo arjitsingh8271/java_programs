@@ -12,7 +12,7 @@ it does'nt handle the exception, if we want to handle customized exception
 then we need try-catch block. 
 */
 
-class EH_throw {
+class EH09_throw1 {
 	static int area(int l, int b) {
 		if (l<0 || b<0) {
 			throw new IllegalArgumentException ("Length & Breadth must be +ve");

@@ -5,7 +5,7 @@ class userAgeException extends RuntimeException {
 	}
 }
 
-class EH_throw2 {
+class EH10_throw2 {
 	public static void main(String[] args) {
 		int age=16;
 

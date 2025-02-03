@@ -1,5 +1,5 @@
 /* Without try-catch block
-class EH_tryCatch {
+class EH03_tryCatch {
 	public static void main(String[] args) {
 		System.out.println(10/0);
 		System.out.println("After S.o.p()");
@@ -12,7 +12,7 @@ class EH_tryCatch {
 
 
 /*	Eg. 1
-class EH_tryCatch {
+class EH03_tryCatch {
 	public static void main(String[] args) {
 		try {
 			System.out.println(10/0);
@@ -30,7 +30,7 @@ class EH_tryCatch {
 
 
 /* Eg. 2
-class EH_tryCatch {
+class EH03_tryCatch {
 
 	static void divide() {
 		System.out.println(10/0);
@@ -54,7 +54,7 @@ class EH_tryCatch {
 
 
 // Eg. 3
-class EH_tryCatch {
+class EH03_tryCatch {
 
 	static void divide() {
 		try {

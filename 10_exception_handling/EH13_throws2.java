@@ -7,7 +7,7 @@ class File {
 	}
 }
 
-class EH_throws2 {
+class EH13_throws2 {
 	public static void main(String[] args) {
 		File f = new File();
 
