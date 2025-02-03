@@ -1,0 +1,85 @@
+The Quick Sort algorithm is a popular and efficient sorting technique based on the divide-and-conquer approach. Here's its algorithm:
+
+
+Quick Sort Algorithm
+--------------------
+
+1. Choose a Pivot:
+	Select a pivot element from the array. Common strategies include choosing the first element, last element, middle element, or a random element.
+
+2. Partition the Array:
+	Rearrange the elements of the array such that:
+		Elements smaller than the pivot come before it.
+		Elements larger than the pivot come after it.
+	The pivot is now in its correct position.
+
+3. Recursively Apply Quick Sort:
+	Apply the same process recursively to the sub-arrays:
+		Sub-array of elements smaller than the pivot.
+		Sub-array of elements larger than the pivot.
+
+4. Base Case:
+	If the sub-array has zero or one element, it is already sorted.
+
+
+
+Pseudocode
+----------
+
+function quickSort(arr, low, high):
+    if low < high:
+        // Step 1: Partition the array
+        pivotIndex = partition(arr, low, high)
+        
+        // Step 2: Recursively sort the sub-arrays
+        quickSort(arr, low, pivotIndex - 1)
+        quickSort(arr, pivotIndex + 1, high)
+
+function partition(arr, low, high):
+    pivot = arr[high]  // Choose pivot (last element)
+    i = low - 1        // Pointer for elements less than pivot
+
+    for j = low to high - 1:
+        if arr[j] < pivot:
+            i = i + 1
+            swap arr[i] and arr[j]
+    
+    // Place pivot in correct position
+    swap arr[i + 1] and arr[high]
+    return (i + 1)
+
+
+
+Example Walkthrough
+-------------------
+
+Input:
+[8, 3, 7, 5, 2, 6, 4]
+
+1. First Partition:
+	Pivot = 4
+	Rearrange: [3, 2, 4, 5, 7, 6, 8]
+	Pivot position: 2
+
+2.Recurse on Sub-arrays:
+	Left Sub-array: [3, 2]
+	Right Sub-array: [5, 7, 6, 8]
+
+3. Continue recursively until all sub-arrays are sorted.
+
+
+
+Time Complexity
+----------------
+Case			Complexity
+Best Case		O(n log n)
+Average Case	O(n log n)
+Worst Case		O(n²)
+
+
+Space Complexity: O(log n) for recursive stack calls.
+-----------------
+
+Key Features
+------------
+Quick Sort is preferred for large datasets due to its efficient average-case time complexity.

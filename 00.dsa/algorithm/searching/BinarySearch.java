@@ -9,10 +9,17 @@ class BinarySearch {
 
 			if (arr[mid] == key)
 				return mid;
+<<<<<<< HEAD
 			else if(arr[mid] < key)
 				l = mid + 1;
 			else
 				h = mid - 1;
+=======
+			else if(arr[mid] > key)
+				h = mid - 1;
+			else
+				l = mid + 1;
+>>>>>>> 93d2dec (Applying local changes after pulling updates)
 		}
 
 		return -1;

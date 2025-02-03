@@ -1,0 +1,105 @@
+The Merge Sort algorithm is an efficient, stable, and divide-and-conquer sorting algorithm. It divides the array into smaller subarrays, sorts them, and then merges them back together in sorted order.
+
+
+Merge Sort Algorithm
+--------------------
+
+1. Divide:
+    Divide the array into two halves until each subarray contains a single element (or is empty).
+
+2.Conquer:
+    Recursively sort the subarrays.
+
+3. Merge:
+    Merge the sorted subarrays into a single sorted array.
+
+
+
+Pseudocode
+----------
+
+function mergeSort(arr):
+    if length(arr) <= 1:
+        return arr
+    
+    // Step 1: Divide the array into halves
+    mid = length(arr) // 2
+    left = arr[0:mid]
+    right = arr[mid:]
+    
+    // Step 2: Recursively sort the subarrays
+    left = mergeSort(left)
+    right = mergeSort(right)
+    
+    // Step 3: Merge the sorted subarrays
+    return merge(left, right)
+
+function merge(left, right):
+    result = []
+    i = 0, j = 0
+    
+    // Compare elements from both subarrays
+    while i < length(left) and j < length(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    
+    // Append any remaining elements
+    result.extend(left[i:])
+    result.extend(right[j:])
+    
+    return result
+
+
+
+Example Walkthrough
+-------------------
+
+Input:
+    [38, 27, 43, 3, 9, 82, 10]
+
+Step-by-Step Process:
+
+1. Divide:
+    [38, 27, 43, 3] and [9, 82, 10]
+    Continue dividing until each subarray contains a single element:
+        [38], [27], [43], [3], [9], [82], [10]
+
+2. Merge and Sort:
+    Merge [38] and [27] → [27, 38]
+    Merge [43] and [3] → [3, 43]
+    Merge [9] and [82] → [9, 82]
+    Merge [82] and [10] → [10, 82]
+
+3. Merge Larger Arrays:
+    Merge [27, 38] and [3, 43] → [3, 27, 38, 43]
+    Merge [9, 82] and [10, 82] → [9, 10, 82]
+    Finally, merge [3, 27, 38, 43] and [9, 10, 82] → [3, 9, 10, 27, 38, 43, 82]
+
+Result:
+    [3, 9, 10, 27, 38, 43, 82]
+
+
+
+Time Complexity
+----------------
+Case	        Complexity
+Best Case	    O(n log n)
+Average Case    O(n log n)
+Worst Case	    O(n log n)
+
+
+Space Complexity: 
+-----------------
+O(n) (additional space required for temporary arrays).
+
+
+
+Key Features
+------------
+Stable sorting algorithm (does not change the relative order of equal elements).
+Efficient for large datasets.
+Works well with linked lists due to sequential merging.

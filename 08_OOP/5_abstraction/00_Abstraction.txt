@@ -126,3 +126,50 @@ Abstract Class: Remained the same after Java 8, with no major changes in its fun
 Interface: Java 8 introduced:
 Default methods: Methods with a body that can provide a default implementation.
 Static methods: Methods that belong to the interface and can be invoked without an instance.
+
+
+
+
+Abstract Class:
+
+    Definition: A class that cannot be instantiated and may contain abstract (incomplete) methods, concrete (implemented) methods, or both.
+    
+    Keyword: Declared using the abstract keyword.
+    
+    Purpose: Used to provide a base class with common functionality for its subclasses while leaving some methods to be implemented by the subclasses.
+    
+    Inheritance: A class can extend only one abstract class (single inheritance).
+    
+    Methods:
+        Can have both abstract methods (without implementation) and concrete methods (with implementation).
+        Can also have private, protected, and static methods.
+    
+    Variables:
+        Can have instance variables.
+        Can define constants and instance fields (both mutable and immutable).
+    
+    Constructor: Can have a constructor (useful for initializing fields or executing some logic when the object is created).
+    
+    Use Case: When you want to share code among related classes and enforce a basic structure or behavior.
+
+Interface:
+
+    Definition: A blueprint of a class that contains only method declarations (before Java 8) or default, static, and private methods (from Java 8 onward).
+    
+    Keyword: Declared using the interface keyword.
+    
+    Purpose: To achieve total abstraction or multiple inheritance by defining a contract that implementing classes must adhere to.
+    
+    Inheritance: A class can implement multiple interfaces (multiple inheritance).
+    
+    Methods:
+        By default, methods are public and abstract (before Java 8).
+        From Java 8, interfaces can have default methods (with implementation) and static methods.
+        From Java 9, interfaces can have private methods.
+    
+    Variables:
+        Can only have public, static, and final constants (no instance variables).
+    
+    Constructor: Cannot have a constructor, as it cannot be instantiated.
+    
+    Use Case: When you want to define a contract for unrelated classes to follow or achieve multiple inheritance.

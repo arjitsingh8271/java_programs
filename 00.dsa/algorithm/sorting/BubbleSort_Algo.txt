@@ -1,0 +1,90 @@
+The Bubble Sort algorithm is a simple and intuitive sorting technique that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted.
+
+
+Bubble Sort Algorithm
+---------------------
+
+1. Start from the first element.
+    Compare the current element with the next element.
+
+2.Swap if necessary.
+    If the current element is greater than the next element, swap them.
+
+3. Iterate through the array.
+    Continue comparing adjacent pairs and swapping them as needed until the end of the array is reached.
+
+4. Repeat for the remaining elements.
+    After each pass, the largest unsorted element will "bubble up" to its correct position at the end.
+    Reduce the range of the array to be sorted in the next pass.
+
+5. Stop when no swaps are made.
+    If a pass completes without any swaps, the array is sorted.
+
+
+Pseudocode
+----------
+
+function bubbleSort(arr):
+    n = length(arr)
+    for i = 0 to n - 1:
+        swapped = false
+        for j = 0 to n - i - 2:
+            if arr[j] > arr[j + 1]:
+                // Swap adjacent elements
+                swap(arr[j], arr[j + 1])
+                swapped = true
+        // If no elements were swapped, the array is sorted
+        if not swapped:
+            break
+
+
+
+Example Walkthrough
+-------------------
+
+Input:
+[5, 3, 8, 6, 2]
+
+Pass 1:
+    Compare 5 and 3 → Swap → [3, 5, 8, 6, 2]
+    Compare 5 and 8 → No Swap
+    Compare 8 and 6 → Swap → [3, 5, 6, 8, 2]
+    Compare 8 and 2 → Swap → [3, 5, 6, 2, 8]
+
+Pass 2:
+    Compare 3 and 5 → No Swap
+    Compare 5 and 6 → No Swap
+    Compare 6 and 2 → Swap → [3, 5, 2, 6, 8]
+
+Pass 3:
+    Compare 3 and 5 → No Swap
+    Compare 5 and 2 → Swap → [3, 2, 5, 6, 8]
+
+Pass 4:
+    Compare 3 and 2 → Swap → [2, 3, 5, 6, 8]
+
+Result:
+    [2, 3, 5, 6, 8]
+
+
+Time Complexity
+-----------------
+Case	        Complexity
+Best Case       O(n)
+Average Case    O(n²)
+Worst Case	    O(n²)
+
+
+Space Complexity: O(1) (in-place sorting).
+-----------------
+
+
+Key Features
+------------
+Simple but inefficient for large datasets.
+Best used for small arrays or as a teaching tool.
+
+
+
+
+
