@@ -1,12 +1,18 @@
-To compile the file, open your terminal and type
-	$javac filename.java
-To run the generated class file, use
-	$java filename
-
-
+To compile:	$javac filename.java 	(java file)
+To run:		$java filename			(class file created by javac)
+	
 To check java version
 	$ java --version
 
+--------------------------------------------
+
+JDK (Java Development Kit)
+JRE (Java Runtime Environment)
+JVM (Java Virtual Machine) : Platform Dependent
+
+JDK = JRE + Development tools(i.e java, javac, javadoc, javaw)
+JRE = Java Package Classes + Runtime Libraries + JVM
+JVM = Class Loader + Memory Areas + Execution Engine
 
 ---------------------------------------------
 

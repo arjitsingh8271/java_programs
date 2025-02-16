@@ -51,3 +51,28 @@ STATES OF PROCESS / THREAD
 	A thread is in this state when it is wating for a resource or for another thread to perform an action.
 5.Terminated (Dead):
     The thread has finished its execution either by completing its task or being explicitly terminated.
+
+
+Multitasking:
+-------------
+Definition: Running multiple tasks at once
+Execution: Switches between tasks
+Resource Sharing: Processes have separate memory
+Performance: Improves efficiency but not parallel execution
+Example: Running Word, Chrome, and Music player
+
+Multiprocessing:
+-------------
+Definition: Using multiple CPUs to run tasks
+Execution: Runs processes in parallel
+Resource Sharing: Each process has its own CPU/memory
+Performance: True parallel execution
+Example: A server using multiple processors
+
+Multithreading:
+-------------
+Definition: Running multiple threads within a single process
+Execution: Runs threads in parallel within a process
+Resource Sharing: Threads share memory within a process
+Performance: Faster execution within a process
+Example: A video editor rendering multiple effects simultaneously

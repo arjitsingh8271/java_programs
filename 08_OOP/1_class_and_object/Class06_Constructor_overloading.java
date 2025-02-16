@@ -13,7 +13,7 @@ class A
 	}
 }
 
-class Class05_Constructor_overloading
+class Class06_Constructor_overloading
 {
 	public static void main (String[] args)
 	{
