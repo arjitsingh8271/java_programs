@@ -7,7 +7,7 @@ class io_02_FileInputStream
 	public static void main(String[] args) throws Exception
 	{
 		
-		FileInputStream f1 = new FileInputStream("Text1.txt");
+		FileInputStream f1 = new FileInputStream("TestFile1.txt");
 		
 		System.out.println(f1.available());		// Before Reading 22
 		byte b[] = new byte[f1.available()];	// f1.available gives file content size.

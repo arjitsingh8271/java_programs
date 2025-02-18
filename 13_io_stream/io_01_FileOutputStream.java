@@ -8,7 +8,7 @@ class io_01_FileOutputStream
 	{
 		try
 		{
-			FileOutputStream f1 = new FileOutputStream("Text1.txt");
+			FileOutputStream f1 = new FileOutputStream("TestFile1.txt");
 			//f1.write("Hello");	//Error
 
 			String s1 = "Learn Java Programming";
