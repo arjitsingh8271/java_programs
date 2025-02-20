@@ -28,7 +28,9 @@ Type of Annotations:
 
 SPRING FRAMEWORK:
 -----------------
-The Spring Framework is a comprehensive, modular framework for building enterprise-level Java applications. It provides infrastructure support, simplifies development, and promotes good programming practices like dependency injection and aspect-oriented programming. Below is a detailed explanation of the major topics and components of the Spring Framework:
+The Spring Framework is a comprehensive, modular framework for building enterprise-level Java applications. 
+It provides infrastructure support, simplifies development, and promotes good programming practices like dependency injection and aspect-oriented programming. 
+Below is a detailed explanation of the major topics and components of the Spring Framework:
 
 
 1. Core Concepts of Spring
@@ -353,4 +355,7 @@ The Spring Framework is a comprehensive, modular framework for building enterpri
 
 Conclusion
 ----------
-The Spring Framework is a versatile and powerful tool for building Java applications. Its modular design allows developers to use only the components they need, making it suitable for a wide range of applications, from small projects to large-scale enterprise systems. By leveraging features like dependency injection, AOP, and Spring Boot, developers can build robust, maintainable, and scalable applications.
+The Spring Framework is a versatile and powerful tool for building Java applications. 
+Its modular design allows developers to use only the components they need, 
+making it suitable for a wide range of applications, from small projects to large-scale enterprise systems. 
+By leveraging features like dependency injection, AOP, and Spring Boot, developers can build robust, maintainable, and scalable applications.
