@@ -1,0 +1,85 @@
+● A java program can contain any number of classes.
+● A java program can contain atmost one public class.
+
+
+ 
+Qn. File name of java program:
+-----------------------------------
+class A {
+	
+}
+class B {
+	
+}
+class C {
+	
+}
+
+a. A.java	✅
+b. B.java	✅
+c. C.java	✅
+d. abc.java ✅
+----------------------------------------
+class A {
+	
+}
+class B {
+	
+}
+public class C {
+	
+}
+
+a. A.java	❎
+b. B.java	❎
+c. C.java	✅
+d. abc.java ❎
+----------------------------------------
+class A {
+	public static void main(String[] args) {
+		System.out.println("A main()");
+	}
+}
+class B {
+	public static void main(String[] args) {
+		System.out.println("B main()");
+	}	
+}
+public class C {
+	
+}
+
+a. A.java	✅
+b. B.java	✅
+c. C.java	✅
+d. abc.java ✅
+NOTE: Three ".class" file will be generated after compiling this program. i.e (A.class, B.class, C.class)
+If we run:
+$ java A 	-> A main()
+$ java B 	-> B main()
+$ java C 	-> error: there is no main method
+----------------------------------------
+class A {
+	public static void main(String[] args) {
+		System.out.println("A");
+	}
+}
+public class B {
+	public static void main(String[] args) {
+		System.out.println("A");
+	}	
+}
+public class C {
+	
+}
+
+a. A.java	❎
+b. B.java	❎
+c. C.java	✅
+d. abc.java ❎
+NOTE: Three ".class" file will be generated after compiling this program. i.e (A.class, B.class, C.class), But the file name must be the name of "public class".
+If we run:
+$ java A 	-> A main()
+$ java B 	-> B main()
+$ java C 	-> error: there is no main method
+----------------------------------------

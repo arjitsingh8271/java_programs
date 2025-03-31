@@ -8,7 +8,7 @@ class L1_ArrayList_02 {
 	public static void main(String[] args) {
 		ArrayList<Integer> arr = new ArrayList<>();
 
-		arr.add(3);
+		arr.add(3);		// Integer -> i = new Integer(3)
 		arr.add(2);
 		arr.add(1);
 

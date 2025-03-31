@@ -116,3 +116,39 @@ Coupling: How much work is involved in changing something?
 		We want to make fuunctionala changes with as less code change as possible.
 
 -----------------------------------------------------
+
+Import Statement
+----------------
+
+Types of import statements:-
+1. Explicit import statements (eg.: import java.util.ArrayList;)
+2. Implicit import statements (eg.: import java.util.*;)
+
+
+"java.lang" like String class & "Default pakage" like current working directory. This two packages we are not required to import because this package is imported automatically in every program.
+What is Inside java.lang:-
+Object : "The parent class of all Java classes."
+String : "Represents immutable character sequences."
+Math : "Contains mathematical functions (e.g., sqrt(), pow())."
+System : "Provides system-related functionalities (e.g., System.out.println())."
+Thread : "Supports multithreading in Java."
+Exception : "Base class for all exceptions."
+Integer, Double, Float, etc. : "Wrapper classes for primitive data types."
+Runnable :	"Interface for defining threads."
+Class : "Represents classes and provides reflection capabilities."
+
+
+Whenever we are importing a pakage all classes and interfaces present in that package by default available but not the sub-package classes. 
+If you want use a sub package class compulsory import statement must be required until sub-package level.
+
+Ex:
+	java
+	│── util
+		│── regex
+			│── Pattern
+
+	a. import java.*;				❎
+	b. import java.util.*;			❎
+	c. import java.util.regex.*;	✅
+
+
