@@ -1,0 +1,207 @@
+Lambda Expressions
+---------------------
+● Lambda expression are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
+eg: (x,y) -> x+y
+● Lambda Expression use only with Function Interface.
+
+● Lambda expression is an anonymous function.
+i.e.,
+	1. Not having any name
+	2. Not having any return type
+	3. Not having modifier
+
+● Staps to make any function into lambda expression
+i.e.,
+	1. Remove modifier
+	2. Remove return type
+	3. Remove method name
+	4. Place arrow
+
+✅eg1:-
+Normal method
+private void hello() {
+	System.out.println("Hello World");
+}
+▪ Lambda expression
+() -> {System.out.println("Hello World");}
+Lambda expression
+1. If body has only one statement then we can remove curlt brackets "{}".
+() -> System.out.println("Hello World");
+
+✅eg2:-
+Normal method
+private void add(int a, int b) {
+	System.out.println(a+b);
+}
+Lambda expression
+(int a, int b) -> {System.out.println(a+b);}
+Lambda expression
+2. Use type inference, compiler guess the situation or context.
+(a, b) -> System.out.println(a+b);
+
+✅eg3:-
+Normal method
+private int getStingLength(String str) {
+	return str.length();
+}
+Lambda expression
+(String str) -> {return str.length();}
+Lambda expression
+3. No return keyword.
+(str) -> str.length();
+Lambda expression
+4. If only one parameter remove the small brackets "()".
+str -> str.length();
+
+
+
+Functional Interface
+--------------------
+● A Functional Interface is an interface that has exactly one abstract method.
+SAM (Single Abstract Method)
+● But can have any numbers of defaults & static methods.
+● We can use an annotation i.e. @FunctioanlInterface
+
+✅eg1:
+@FunctioanlInterface
+public interface Myinterface {
+	public void Hello();	// abstract method
+}
+
+✅eg2:
+@FunctioanlInterface
+public interface Myinterface {
+	public void hello();	// abstract method
+
+	default void bye() {
+	};
+
+	public static void ok() {
+	};
+}
+
+✅eg3:
+▪ case1:
+@FunctioanlInterface
+public interface Parent {
+	public void hello();
+}
+@FunctioanlInterface
+public interface Child extends Parent {
+}
+
+▪ case2:
+@FunctioanlInterface
+public interface Parent {
+	public void hello();
+}
+@FunctioanlInterface	//error
+public interface Child extends Parent {
+	public void bye();
+}
+
+▪ case3:
+@FunctioanlInterface
+public interface Parent {
+	public void hello();
+}
+@FunctioanlInterface
+public interface Child extends Parent {
+	public void hello();
+}
+
+▪ case4:
+@FunctioanlInterface
+public interface Parent {
+	public void hello();
+}
+@FunctioanlInterface
+public interface Child extends Parent {
+	default void bye() {
+	};
+
+	public static void ok() {
+	};
+}
+
+● We can invoke lambda expression by using functional interface.
+
+✅eg1:
+@FunctionalInterface
+interface A {
+	void show();
+}
+
+class MyClass {
+	public static void main(String[] args) {
+		// Annonumous inner class
+		A a = new A() {
+			public void show() {
+				System.out.println("Showing...");
+			}
+		};
+		a.show();
+
+		// Lambda Expression
+		A b = () -> System.out.println("Showing...");
+		b.show();
+	}
+}
+
+
+
+Default method in Interfaces
+----------------------------
+● Default methods in Interface are those methods, which are define in the interface with the keyword "default".
+● Default method contain the complete defination of the function.
+● Can be overriden or changed in the implementation class.
+
+✅eg1:
+interface A {
+	default void hello() {
+		System.out.println("Hello World");
+	}
+}
+
+
+
+Static method in Interface
+----------------------------
+● Static methods in Interface are those methods, which are define in the interface with the keyword "static".
+● Static method contain the complete defination of the function.
+● Cannot be overriden or changed in the implementation class.
+● We can also write main method inside Interface.
+
+✅eg1:
+interface A {
+	public static void hello() {
+		System.out.println("Hello World");
+	}
+}
+
+
+
+Stream API
+-------------
+Java Stream API for Bulk Data Operations on Collections.
+
+
+
+Date & Time API
+-----------------
+
+
+
+Base64 Encode & Decode
+---------------------
+
+
+
+Method & Constructor reference
+------------------------------
+:: Operator
+
+
+
+Optional Class
+--------------

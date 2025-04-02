@@ -76,3 +76,12 @@ NOTE: (Interface), [Class]
 
 (iterator)
 	[List Iterator]
+
+
+----------------------------------
+
+Qn. Stream vs Collection
+-> 	Collection: Data Structure store data in memory.
+				Store, Access, and Modify data.
+	Stream: Sequence of data used for comuptation.
+			Process or transform data (e.g. filter, map, reduce).
