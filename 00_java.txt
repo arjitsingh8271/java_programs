@@ -1,3 +1,28 @@
+✅ Who Created Java?
+Java was created by James Gosling and his team at Sun Microsystems in 1991. The first official version, Java 1.0, was released in 1995. Later, in 2010, Sun Microsystems was acquired by Oracle Corporation, which now maintains Java.
+
+✅ History of Java
+● 1991 – James Gosling, Mike Sheridan, and Patrick Naughton started the project.
+● 1995 – Java 1.0 released.
+● 2006 – Sun open-sourced Java under the GPL license.
+● 2010 – Oracle Corporation acquired Java.
+● Present – Java continues to evolve, with the latest versions adding new features.
+
+✅ Why Was Java Created?
+James Gosling and his team originally developed Java for interactive television and embedded systems. However, it became popular for web applications, enterprise software, and mobile apps due to its platform independence (Write Once, Run Anywhere).
+
+✅ Features of Java
+1. Platform Independent – Runs on any OS using the JVM.
+2. Object-Oriented – Everything is based on objects and classes.
+3. Secure – Has built-in security features like a secure class loader.
+4. Robust – Strong memory management and exception handling.
+5. Multithreading – Supports multiple threads for better performance.
+6. High Performance – JIT (Just-In-Time) compiler enhances speed.
+
+✅ Fun Fact
+Java was originally called "Oak", named after an oak tree outside James Gosling’s office. Later, it was renamed Java after Java coffee beans, inspired by their love for coffee!
+
+-------------------------------------------
 To compile:	$javac filename.java 	(java file)
 To run:		$java filename			(class file created by javac)
 	
@@ -100,7 +125,7 @@ Causes the current thread to wait until either another thread invokes the notify
 void	wait(long timeout, int nanos)
 Causes the current thread to wait until another thread invokes the notify() method or the notifyAll() method for this object, or some other thread interrupts the current thread, or a certain amount of real time has elapsed.
 
---------------------------------------------------
+-------------------------------------------
 Coupling: How much work is involved in changing something?
 
 	Coupling is important everywhere:
@@ -115,7 +140,7 @@ Coupling: How much work is involved in changing something?
 		We want Loose Coupling as much as possible.
 		We want to make fuunctionala changes with as less code change as possible.
 
------------------------------------------------------
+---------------------------------------------
 
 Import Statement
 ----------------

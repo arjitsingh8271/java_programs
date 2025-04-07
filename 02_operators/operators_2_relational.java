@@ -1,5 +1,5 @@
 /* 
-Relational Operators
+Relational (Comparison) Operators (==, !=, >, <, >=, <=)
 it returns True or False
 */
 

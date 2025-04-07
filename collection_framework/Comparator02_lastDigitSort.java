@@ -1,11 +1,9 @@
-// Comparator is a Concept or a Interface using we can specifi our own logic for Sorting.
-
 import java.util.ArrayList;
 import java.util.Collections;	// Collections is a Class
 import java.util.Comparator;
 
 
-class Comparator01_lastDigitSort {
+class Comparator02_lastDigitSort {
 	public static void main(String[] args) {
 
 		ArrayList<Integer> num = new ArrayList<>();

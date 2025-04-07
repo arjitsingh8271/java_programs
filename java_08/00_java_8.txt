@@ -4,13 +4,13 @@ Lambda Expressions
 eg: (x,y) -> x+y
 ● Lambda Expression use only with Function Interface.
 
-● Lambda expression is an anonymous function.
+► Lambda expression is an anonymous function.
 i.e.,
 	1. Not having any name
 	2. Not having any return type
 	3. Not having modifier
 
-● Staps to make any function into lambda expression
+► Staps to make any function into lambda expression
 i.e.,
 	1. Remove modifier
 	2. Remove return type
@@ -22,7 +22,7 @@ Normal method
 private void hello() {
 	System.out.println("Hello World");
 }
-▪ Lambda expression
+Lambda expression
 () -> {System.out.println("Hello World");}
 Lambda expression
 1. If body has only one statement then we can remove curlt brackets "{}".
@@ -52,6 +52,12 @@ Lambda expression
 Lambda expression
 4. If only one parameter remove the small brackets "()".
 str -> str.length();
+
+► NOTE: 
+● A variable inside Lambda Expression is a Act as a Final variable.
+● Lambda Expression cn access local variable, but they must be effectively final.
+
+
 
 
 
@@ -150,58 +156,189 @@ class MyClass {
 
 
 
-Default method in Interfaces
-----------------------------
-● Default methods in Interface are those methods, which are define in the interface with the keyword "default".
-● Default method contain the complete defination of the function.
-● Can be overriden or changed in the implementation class.
-
-✅eg1:
-interface A {
-	default void hello() {
-		System.out.println("Hello World");
-	}
-}
 
 
+function
+---------
 
-Static method in Interface
-----------------------------
-● Static methods in Interface are those methods, which are define in the interface with the keyword "static".
-● Static method contain the complete defination of the function.
-● Cannot be overriden or changed in the implementation class.
-● We can also write main method inside Interface.
+● Built-in Functional Interfaces (Java 8) :
+● In java.util.function
 
-✅eg1:
-interface A {
-	public static void hello() {
-		System.out.println("Hello World");
-	}
-}
+1. Predicate<T>
+    ● Takes one input, returns a boolean.
+    ● Used for filtering.
+2. BiPredicate
+	● Takes two input, returns a boolean.
+
+3. Function<T, R>
+    ● Takes one input, returns one output.
+
+4. UnaryOperator<T>
+	● In Function if I/O datatype are same multi-threadingwe can replace Function with UnaryOperator
+
+5. BiFunction<T, R>
+    ● Takes two input, returns one output.
+
+6. BinaryOperator<T>
+	● In BiFunction if I/O datatype are same multi-threadingwe can replace BiFunction with UnaryOperator
+
+7. Consumer<T>
+    ● Takes one input, returns nothing.
+    ● Used for printing/logging.
+
+8. BiConsumer<T>
+    ● Takes two input, returns nothing.
+
+9. Supplier<T>
+    ● Takes no input, returns one output.
+    ● Used for getting values.
 
 
-
-Stream API
--------------
-Java Stream API for Bulk Data Operations on Collections.
-
-
-
-Date & Time API
------------------
-
-
-
-Base64 Encode & Decode
----------------------
 
 
 
 Method & Constructor reference
 ------------------------------
-:: Operator
+● A Method Reference is a shorthand syntax for a lambda expression that calls an existing method.
+● Syntax: ClassName::methodName
+● :: -> Method Reference Operator
+
+► Types of Method References:
+
+1. Static method
+Syntax: ClassName::staticMethodName
+Eg: Math::max
+
+2. Instance method of a particular object	
+Syntax: object::instanceMethodName	
+Eg: System.out::println
+
+3. Instance method of an arbitrary object of a particular type	
+Syntax: ClassName::instanceMethodName	
+Eg: String::toLowerCase
+
+4. Constructor reference	
+Syntax: ClassName::new	
+Eg: ArrayList::new
+
+
+► Advantages of Method & Constructor Reference
+	● Cleaner and more readable code
+	● Reuses existing method logic
+	● Less boilerplate than full lambda
+
+
+
+
+
+Stream API
+-------------
+● Java Streams API was introduced in Java 8 to process collections (like Lists, Sets, and Maps) in a functional and declarative way. 
+● It enables operations like filtering, mapping, reducing, sorting, and iterating over collections efficiently.
+● Java Stream API for Bulk Data Operations on Collections.
+● A Stream in Java is a sequence of elements that supports aggregate operations (such as filter(), map(), reduce(), sorted(), etc.).
+
+► Key Features of Streams:
+    1. Does not store data (operates on collections).
+    2. Does not modify the original collection.
+	3. (Functional Style): Uses lambda expressions for clean and readable code
+	4. (Internal Iteration): Handles iteration internally, unlike loops
+	5. (Lazy Evaluation): Intermediate operations only when a terminal operation is called
+	6. (Pipelining): Operations are chained (pipelined) for efficient processing.
+	7. (Parallel Processing): parallelStream() allows multi-threading to improve performance
+	8. (Primitive Streams): IntStream, LongStream, DoubleStream to avoid boxing overhead
+	9. (Reduction Operations): Supports operations like sum, min, max, count, average
+	10. (Collecting Results): Converts Stream back to List, Set, or Map.
+	11. (Infinite Streams): Lazy-loaded infinite sequences
+
+► Intermediate Operations (Returns another Stream):
+    ● filter(): Filters elements based on a condition
+    ● map(): Transforms each element
+    ● sorted(): Sorts elements
+    ● distinct(): Removes duplicates
+    ● limit(n): Limits the number of elements
+    ● skip(n): Skips the first n elements
+
+► Terminal Operations (Returns non-stream values like list, int, or void):
+    ● forEach(): Iterates over elements
+    ● collect(): Converts stream to List, Set, Map
+    ● reduce(): Aggregates elements (e.g., sum)
+    ● count(): Counts elements
+    ● toArray()
+    ● min(), max(): Finds smallest and largest
+    ● anyMatch(): Checks if any element matches condition
+    ● allMatch(): Checks if all elements match condition
+    ● noneMatch(): Checks if no elements match condition
+
+► NOTE: 
+● If
+
+
+
+
+
+Date & Time API
+-----------------
+► Why New API?
+-> Old classes like Date, Calendar had:
+   ● Mutability issues
+   ● Not thread-safe
+   ● Poor design
+   ● Confusing timezone handling
+
+► Commonly Used Classes
+	● LocalDate: Represents date (yyyy-MM-dd) without time or timezone
+	● LocalTime: Represents time (hh:mm:ss) without date or timezone
+	● LocalDateTime: Combines date and time
+	● ZonedDateTime: Full date/time with timezone
+	● Instant: Timestamp (machine time)
+	● Period: Difference between two dates (in years, months, days)
+	● Duration: Difference between two times (in seconds, nanoseconds)
+	● DateTimeFormatter: Used to format/parse date/time
+
+
 
 
 
 Optional Class
 --------------
+● Optional<T> class to avoid NullPointerException and write more robust, readable, and null-safe code.
+● Optional is a container object which may or may not contain a non-null value.
+	● If a value is present, isPresent() returns true.
+	● If not, it’s empty, and calling get() will throw NoSuchElementException.
+
+
+► Common Methods of Optional
+	● isPresent(): Checks if value is present
+	● ifPresent(Consumer): Executes action if value exists
+	● get(): Returns the value if present
+	● orElse(T): Returns value if present, else default
+	● orElseGet(Supplier): Returns value if present, else from supplier
+	● orElseThrow(): Throws exception if no value present
+	● map(Function): Transforms value if present
+	● flatMap(Function): Similar to map, but avoids nested Optionals
+	● filter(Predicate): Returns Optional if value passes the filter
+
+► Why Use Optional?
+● Before Java 8:
+String name = getUserName();
+if(name != null) {
+    System.out.println(name);
+}
+
+● With Optional:
+Optional<String> name = getUserName();
+name.ifPresent(System.out::println);
+
+✅ Helps to avoid null checks
+✅ Encourages functional programming style
+
+► How to Create Optional
+	● Optional<String> opt1 = Optional.of("Hello");          // Non-null
+	● Optional<String> opt2 = Optional.ofNullable(null);     // May be null
+	● Optional<String> opt3 = Optional.empty();              // Always empty
+
+
+
+Base64 Encode & Decode
+---------------------

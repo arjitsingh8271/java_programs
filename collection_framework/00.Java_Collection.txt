@@ -1,34 +1,73 @@
-What are Collection?
----------------------
-Collection: It is a mechanism of collecting some group of objects either statically or dynamically. 
-Collections can hold a group of objects. 
-The size of the collection is not fixed, it means when we are inserting and deleting the elements than the size of the collection dynamically increased or decreased. 
-Every collection internally follows data structures and contains predefined functions it means we don't need to write new logic for performing the operations like Insertion, Deletion, Searching, Sorting, etc.
-It works with Wrapper Classes.
+What is a Collection in Java?
+-----------------------------
+● A Collection in Java is a group of objects that can be stored, retrieved, and manipulated efficiently. 
+● Java provides the Collection interface in java.util package, which is the root interface of the Java Collection Framework.
 
-What is a Framework?
---------------------
-The framework is a semi-finished reusable application that provides some common low-level services for serving reoccurring problems and that can be customized according to our requirements. For example:
 
-The computer is a framework; it can be used by all people according to their requirements.
-Switchboard is a framework it can be used by all people according to their requirement.
-
+Interfaces of Java Collection Framework
+---------------------------------------
 
 Java.util package contains several classes that collect homogeneous and heterogeneous objects without size limitation. 
 These classes are usually called collection framework classes. 
 All the collection classes are classified into the following four categories:
 
-1. List: It is used to store a group of individual elements where the elements can be duplicated (e.g. ArrayList, LinkedList).
-2. Set: It is used to store a group of individual elements but the elements can’t be duplicated (e.g. HashSet, TreeSet).
-3. Queue: It is used to hold multiple elements prior to processing and is dedicated to storing all the elements where the order of the elements matter (e.g. Priority Queue, LinkedList when used as a queue).
-4. Deque: A double-ended queue that allows insertion & deletion from both ends (e.g. ArrayDeque).
-5. Map: It is used to store the element in the form of key-value pairs where the keys can’t be duplicated but values can be duplicated (e.g. HashMap, TreeMap).
+1️⃣ List Interface: 
+------------------
+● It is used to store a group of individual elements where the elements can be duplicated.
+● Implementations of List
+    ArrayList – Fast, dynamic array (recommended for most cases).
+    LinkedList – Good for frequent insertions/deletions.
+    Vector – Synchronized version of ArrayList (rarely used).
+
+2️⃣ Set Interface: 
+-----------------
+● It is used to store a group of individual elements but the elements can’t be duplicated.
+● Implementations of Set
+    HashSet – Fastest, unordered, uses a hash table.
+    LinkedHashSet – Maintains insertion order.
+    TreeSet – Sorted set (ascending order).
+
+3️⃣ Queue Interface:
+-------------------
+● It is used to hold multiple elements prior to processing and is dedicated to storing all the elements where the order of the elements matter.
+● Implementations of Queue
+    PriorityQueue – Elements are ordered by priority.
+    LinkedList – Can be used as a queue.
+
+4️⃣ Deque Interface: 
+-------------------
+● A double-ended queue that allows insertion & deletion from both ends.
+● Implementations of Deque
+    ArrayDeque.
+
+5️⃣ Map Interface (Key-Value Pairs): 
+-----------------------------------
+● It is used to store the element in the form of key-value pairs where the keys can’t be duplicated but values can be duplicated.
+● Implementations of Map
+    HashMap – Fastest, unordered, allows one null key.
+    LinkedHashMap – Maintains insertion order.
+    TreeMap – Sorted map (ascending key order).
+
 
 
 Collection API :-	Concep
 Collections :- 		'Class'
 Collection :- 		'Interface'
 
+
+Comparison Table of Collection Implementations
+----------------------------------------------
+Interface	Class			Allows Duplicates?	Order Maintained?		Sorted?
+---------	-----			------------------	-----------------		-------
+List		ArrayList		✅ Yes				✅ Yes (Index-based)	❌ No
+List		LinkedList		✅ Yes				✅ Yes					❌ No
+Set			HashSet			❌ No				❌ No					❌ No
+Set			LinkedHashSet	❌ No				✅ Yes					❌ No
+Set			TreeSet			❌ No				✅ Yes					✅ Yes
+Queue		PriorityQueue	✅ Yes				❌ No					✅ Yes
+Map			HashMap			❌ No (for keys)	❌ No					❌ No
+Map			LinkedHashMap	❌ No (for keys)	✅ Yes					❌ No
+Map			TreeMap			❌ No (for keys)	✅ Yes					✅ Yes
 
 
 Java Collection: 
@@ -85,3 +124,26 @@ Qn. Stream vs Collection
 				Store, Access, and Modify data.
 	Stream: Sequence of data used for comuptation.
 			Process or transform data (e.g. filter, map, reduce).
+
+
+Collection (Interface)
+--------------------------
+● Collection is an interface in java.util package that represents a group of objects (elements).
+● It is the root interface of the Java Collection Framework (JCF).
+● It provides common methods like add(), remove(), size(), etc.
+
+● Key Points about Collection:
+    1. It is not a class but an interface.
+    2. Other collection interfaces like List, Set, and Queue extend Collection.
+    3. It provides a common structure for working with different types of collections.
+
+
+Collections (Utility Class)
+---------------------------
+● Collections is a class in java.util package that contains static utility methods for working with collections.
+● It provides methods like sorting, searching, and synchronizing collections.
+
+● Key Points about Collections:
+    1. It is a final class with only static methods.
+    2. It contains helper methods for performing operations like sort(), reverse(), shuffle(), etc.
+    3. It cannot be instantiated.

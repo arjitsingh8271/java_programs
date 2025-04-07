@@ -1,4 +1,4 @@
-// Functional interface / SAM means interface havingonly one method.
+// Functional interface / SAM means interface having only one method.
 
 interface A {	// Functional Interface
 	void show();
@@ -12,7 +12,7 @@ class B {
 }
 
 
-class Interface05_FunctionalInterface {
+class FunctionalInterface {
 	public static void main(String[] args) {
 		B b = new B();
 		b.show();		// Showing..
