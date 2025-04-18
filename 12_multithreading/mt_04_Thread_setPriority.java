@@ -51,26 +51,34 @@ Priority: 3
 
 class MyRunnable implements Runnable {
     public void run() {
-        System.out.println("Thread " + Thread.currentThread().getId() + " is running");
+        System.out.println("Thread " + Thread.currentThread().getId() + " is RUNNING");
     }
 }
 
-public class mt_05_Thread_setPriority {
+public class mt_04_Thread_setPriority {
     public static void main(String[] args) {
         Thread t1 = new Thread(new MyRunnable());
         Thread t2 = new Thread(new MyRunnable());
+        Thread t3 = new Thread(new MyRunnable());
+
 
         t1.setPriority(Thread.MIN_PRIORITY);
         System.out.println("ID: " + t1.getId());
         System.out.println("Priority: " + t1.getPriority());
         
-        t2.setPriority(Thread.MAX_PRIORITY);
+        t2.setPriority(Thread.NORM_PRIORITY);		// By Default
         System.out.println("ID: " + t2.getId());
         System.out.println("Priority: " + t2.getPriority());
+
+        t3.setPriority(Thread.MAX_PRIORITY);
+        System.out.println("ID: " + t3.getId());
+        System.out.println("Priority: " + t3.getPriority());
 
 
         t1.start();
         t2.start();
+        t3.start();
+
     }
 }
 

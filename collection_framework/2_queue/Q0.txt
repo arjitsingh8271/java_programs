@@ -1,0 +1,24 @@
+In Java, the Queue is a part of the Java Collections Framework and is used to hold multiple elements prior to processing. It follows FIFO (First-In-First-Out) ordering.
+
+
+1. Queue Interface Overview
+● Defined in: java.util.Queue
+● Extends the Collection interface.
+● It models a line of elements where elements are inserted at the rear and removed from the front.
+
+
+2. Common Implementations of Queue
+Implementation	Description
+--------------	-----------
+LinkedList		Most common Queue implementation
+PriorityQueue	Elements are ordered based on priority
+ArrayDeque		Resizable array-based double-ended queue
+
+
+3. Basic Methods in Queue Interface
+add(e):	Inserts the specified element into the queue "enqueue". Throws exception if capacity is exceeded.
+offer(e): Inserts the specified element, returns false if it fails.
+remove(): Retrieves and removes the head "dequeue". Throws exception if empty.
+poll(): Retrieves and removes the head, or returns null if empty.
+element(): Retrieves the head without removing. Throws exception if empty.
+peek():	Retrieves the head without removing, or null if empty.

@@ -11,13 +11,12 @@ class.
 
 
 class myThread extends Thread {
-	// overriding run methods
+	@Override
 	public void run() {	
-		int i=1;
+		
 		// Infinite Loop
 		while (true) {
-			System.out.println(i + " Hello");
-			i++;
+			System.out.println("World " + Thread.currentThread().getName());
 		}
 	}
 }
@@ -27,11 +26,9 @@ class mt_01_using_Thread {
 		myThread t1 = new myThread();
 		t1.start();		// to start run method
 		
-		int i=1;
 		// Infinite Loop
 		for (; ; ) {
-			System.out.println(i + " World");
-			i++;
+			System.out.println("Hello " + Thread.currentThread().getName());
 		}
 
 	}
@@ -51,26 +48,11 @@ built in method of thread class.
 
 /*
 OUTPUT:
-
-1 Hello    
-2 Hello    
-3 Hello    
-4 Hello    
-5 Hello    
-6 Hello
-7 Hello                                                               
-8 Hello
-9 Hello
-1 World
-2 World
-3 World
-10 Hello
-4 World
-11 Hello
-5 World
-12 Hello
-6 World
-13 Hello
-7 World
-14 Hello
+   
+World Thread-0
+World Thread-0
+Hello main
+Hello main
+World Thread-0
+World Thread-0
 */

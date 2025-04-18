@@ -2,6 +2,12 @@
 Synchronization is crucial in a multithreaded environment to prevent 
 concurrent access to shared resources, which can lead to data inconsistency. 
 Java provides the synchronized keyword to control access to critical sections.
+
+for single instance:
+--------------------
+synchronized (this) {
+	count++;
+}
 */
 
 // Resources or Shared Data

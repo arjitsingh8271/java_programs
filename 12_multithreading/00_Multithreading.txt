@@ -1,10 +1,3 @@
-Why Runnable?
--------------
-Because when we extends Thread class, we can't extends other class because java does'n support multiple inheritance.
-So, Runnable is an interface when we implements the Runnable interface we can implements other interfaces.
-
-
-
 What is a CPU / Processor?
 --------------------------
 The CPU (Central Processing Unit) is the "brain" of a computer. 
@@ -38,21 +31,6 @@ In summary:
     Thread: A smaller unit of work within a process.
 
 
-STATES OF PROCESS / THREAD
---------------------------
-1.New:
-	A thread is in this state when it is created but not yet started.
-2.Runnable (Ready):
-	When start() method is called the thread become runnable / ready.
-	It's ready to run and is waiting for CPU time.
-3.Running:
-	The thread is currently being executed by the CPU.
-4.Blocked (Waiting):
-	A thread is in this state when it is wating for a resource or for another thread to perform an action.
-5.Terminated (Dead):
-    The thread has finished its execution either by completing its task or being explicitly terminated.
-
-
 Multitasking:
 -------------
 Definition: Running multiple tasks at once
@@ -76,3 +54,94 @@ Execution: Runs threads in parallel within a process
 Resource Sharing: Threads share memory within a process
 Performance: Faster execution within a process
 Example: A video editor rendering multiple effects simultaneously
+--------------------------------------------------
+
+
+To Create a new thread in java, you can either extend the Threaad class or implement the Runnable Interface.
+
+
+Why Runnable?
+-------------
+Because when we extends Thread class, we can't extends other class because java does'n support multiple inheritance.
+So, Runnable is an interface when we implements the Runnable interface we can implements other interfaces.
+
+
+
+STATES OF PROCESS / THREAD
+--------------------------
+1.NEW:
+	A thread is in this state when it is created but not yet started.
+2.RUNNABLE (Ready):
+	When start() method is called the thread become runnable / ready.
+	It's ready to run and is waiting for CPU time.
+3.RUNNING:
+	The thread is currently being executed by the CPU.
+4.BLOCKED (Waiting):
+	A thread is in this state when it is wating for a resource or for another thread to perform an action.
+5.TERMINATED (Dead):
+    The thread has finished its execution either by completing its task or being explicitly terminated.
+
+
+List of important methods in the Thread class in Java
+------------------------------------------------------
+1. start(): Starts a new thread. It calls the run() method in a new thread.
+	Thread t = new MyThread();
+	t.start();
+
+2. run(): Contains the code that the thread executes. It can be overridden in your class.
+	public void run() {
+    	System.out.println("Thread is running");
+	}
+
+3. sleep(long millis): Pauses the current thread for the specified time in milliseconds.
+	Thread.sleep(1000); // sleeps for 1 second
+
+4. join(): Waits for the thread to die (finish execution).
+	t1.start();
+	t1.join();  // main thread waits for t1 to finish
+
+5. setName(String name): Sets the name of the thread.
+	t.setName("Worker-1");
+
+6. getName(): Returns the name of the thread.
+	System.out.println(t.getName());
+
+7. setPriority(int priority): Sets the priority of a thread (1 to 10).
+	t.setPriority(Thread.MAX_PRIORITY); // 10
+
+8. getPriority(): Returns the priority of the thread.
+	int p = t.getPriority();
+
+9. isAlive(): Returns true if the thread is still running.
+	if (t.isAlive()) {
+    	System.out.println("Thread is still running");
+	}
+
+10. yield(): Hints to the thread scheduler that the current thread is willing to yield its current use of CPU.
+	Thread.yield();
+
+11. interrupt(): Interrupts a sleeping or waiting thread.
+	t.interrupt();
+
+12. isInterrupted(): Checks if the thread has been interrupted.
+	if (t.isInterrupted()) {
+    	System.out.println("Thread was interrupted");
+	}
+
+13. currentThread(): (Static) Returns the currently executing thread.
+	Thread current = Thread.currentThread();
+	System.out.println("Current Thread: " + current.getName());
+
+14. activeCount(): (Static) Returns the number of active threads in the current thread’s thread group.
+	System.out.println(Thread.activeCount());
+
+
+
+
+
+
+
+
+
+
+

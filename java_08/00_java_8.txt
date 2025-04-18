@@ -167,31 +167,41 @@ function
 1. Predicate<T>
     ● Takes one input, returns a boolean.
     ● Used for filtering.
+    ● test()
+
 2. BiPredicate
 	● Takes two input, returns a boolean.
+	● test()
 
 3. Function<T, R>
     ● Takes one input, returns one output.
+    ● apply()
 
 4. UnaryOperator<T>
 	● In Function if I/O datatype are same multi-threadingwe can replace Function with UnaryOperator
+	● apply()
 
 5. BiFunction<T, R>
     ● Takes two input, returns one output.
+    ● apply()
 
 6. BinaryOperator<T>
 	● In BiFunction if I/O datatype are same multi-threadingwe can replace BiFunction with UnaryOperator
+	● apply()
 
 7. Consumer<T>
     ● Takes one input, returns nothing.
     ● Used for printing/logging.
+    ● accept()
 
 8. BiConsumer<T>
     ● Takes two input, returns nothing.
+    ● accept()
 
 9. Supplier<T>
     ● Takes no input, returns one output.
     ● Used for getting values.
+    ● get()
 
 
 

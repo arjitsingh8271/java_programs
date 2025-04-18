@@ -104,8 +104,8 @@ NOTE: (Interface), [Class]
 ---------------------------------
 
 (Map) -- 'Key Value pairs'
-	[HashMap]
-	[LinkedHashMap]
+	[HashMap] -- 'Unorder'
+	[LinkedHashMap] -- 'Order'
 	[HashTable]	-- 'Same as HashMap + Synchronized'
 	(SortedMap)
 		[TreeMap]
