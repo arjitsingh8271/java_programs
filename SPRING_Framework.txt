@@ -41,22 +41,29 @@ Below is a detailed explanation of the major topics and components of the Spring
 
     ● Dependency Injection (DI):
         ○ DI is a design pattern and a key feature of Spring.
-        ○ Objects are provided with their dependencies (other objects they work with) rather than creating them internally.
+        ○ Dependency Injection (DI) is a process by which we can inject one Bean object into another Bean object. Like Address Bean injected into Student Bean.
+        ○ Beans are objects managed by the Spring container.
         ○ Types of DI: Constructor Injection, Setter Injection, and Field Injection.
 
 
-2. Spring Container
--------------------
+2. Spring Container / IoC Container
+-----------------------------------
     ● The Spring container is the core of the Spring Framework.
     ● It manages the lifecycle of beans and their dependencies.
     ● Types of Containers:
         ○ BeanFactory (Old): Basic container providing DI support.
-        ○ ApplicationContext (New): It is a Interface. Advanced container with additional features like AOP, event propagation, and internationalization.
+        ○ ApplicationContext (New): It is Spring's central interface for accessing beans (objects managed by Spring).
+            ◌ It provides advanced features like:
+                1.Bean lifecycle management
+                2.Internationalization
+                3.Event propagation
+                4.AOP integration
+                5.Bean factory methods
         	◌ Classes that impliments AplicationContext
-        		1. ClasspathXMLApplicationContext:
-        		2. AnnotationConfigApplicationContext:
-        		3. FileSystemXMLApplicationContext:
-        		4. WebApplicationContext:
+        		1.ClasspathXMLApplicationContext:
+        		2.AnnotationConfigApplicationContext:
+        		3.FileSystemXMLApplicationContext:
+        		4.WebApplicationContext:
         
 
 3. Spring Beans

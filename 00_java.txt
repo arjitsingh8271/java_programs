@@ -23,11 +23,26 @@ James Gosling and his team originally developed Java for interactive television 
 Java was originally called "Oak", named after an oak tree outside James Gosling’s office. Later, it was renamed Java after Java coffee beans, inspired by their love for coffee!
 
 -------------------------------------------
+
+In Java, the program (source code) written by the programmer gets compiled and converted into byte code (compiled code) by the Java compiler.
+
+All the byte codes required for the program are then given to the interpreter. The interpreter reads the byte code line by line, converts it to binary form, also called as machine language or binary language, and then executes it.
+
+
+If a program written on a particular platform can run on other platforms without any recompilation, it is known as a platform independent program.
+
+
+-------------------------------------------
+
+check if Java is installed in your computer
+$ java -version
+$ java --version
+
+you will get a message about the version installed on the command prompt window / Linux terminal.
+
+
 To compile:	$javac filename.java 	(java file)
-To run:		$java filename			(class file created by javac)
-	
-To check java version
-	$ java --version
+To run:		$java filename			(class file created by javac)	
 
 --------------------------------------------
 
@@ -177,3 +192,28 @@ Ex:
 	c. import java.util.regex.*;	✅
 
 
+-------------------------------------------
+Static:
+
+When a variable is declared as Static, then a single copy of the variable is created and shared among all objects at the class level. Memory allocation for such variables happen only once when the class is loaded in the memory. These variables are also known as class-level variables.
+
+Since static variables and instance variables are both members of the class, they are often referred to as member variables.
+
+To create a static member variable, precede its declaration with the keyword static. When a member is declared static, it can be accessed before any object of the class is created and without reference to any object. 
+
+Syntax:
+	private static float deliveryCharge; //Declaration of static variable 
+
+Static blocks are used to initialize static variables when it cannot be done in a single line. They can also be used to add preprocessing if required.
+
+Syntax:
+	static {
+		deliveryCharge = 1.5f; // initialize the static variable
+	}
+
+---------------------------------------------
+super keyword can also be used for
+
+invoking a parent class method from a child class method 
+
+accessing a parent class instance variable in the child class in case there is a variable in the child class also with the same name

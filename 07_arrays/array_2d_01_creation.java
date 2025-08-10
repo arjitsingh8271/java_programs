@@ -2,6 +2,8 @@ class array_2d_01_creation {
 	
 	public static void main(String[] args) {
 
+		// int arr[][] = new int[3][2];
+
 		int arr[][] = {{1,2},{3,4},{5,6}};
 
 		// for each loop

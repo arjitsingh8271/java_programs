@@ -1,12 +1,48 @@
 Class: 
 ------
-A class is a blueprint for the object. Before we create an object, we first need to define the class.
+A representation specifying the characteristics and behaviors of an object is called a class. It is not a real life entity but a template for representing real life entities.
+
 A Class contain Properties & Behaviour of a Object.
+
 
 Object:
 -------
+An object, which is an instance of a class is a real life entity which has some attributes and behaviors. The class determines the attributes and behaviors which an object should possess to belong to the class.
+
 An Object is a instance of a Class. 
 An Object have some Properties & Behaviour that are define in the Class.
+
+
+Constructor
+-----------
+A constructor in Java is a special method that is used to initialize class variables at the time of object creation. 
+
+Each time an object is created using the new() keyword, a constructor is called. A constructor can be created by the programmer. If the developer does not create any constructor, then, Java provides a default constructor. 
+
+Constructors have the same name as that of the class and does not have a return type.
+
+
+Encapsulation
+--------------
+Restricting access to data is called encapsulation.
+
+They are used to specify access levels to control the visibility of a class and its members. This facilitates encapsulation. There are 4 such access modifiers in Java:
+
+1. Public: Accessible from any other class
+
+2. Private: Accessible only inside its own class
+
+Protected: Accessible inside the same package and to the sub-classes in different packages. This will be discussed in detail later in the course.
+
+3. Default: Accessible inside the same package. Members created without any access modifier will have this access.
+
+
+Abstraction
+-----------
+OOP provide an abstraction that hides the internal implementation details. You just need to know the methods that are available to call and the input parameters required to call a method but you don’t need to know how the method is implemented.
+
+
+
 
 
 Eg:	

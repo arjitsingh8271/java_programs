@@ -1,0 +1,11 @@
+An array is a collection of values of the same data type, stored in contiguous memory locations and referred by the same name. It holds a fixed number of values, decided at the time of array declaration.
+
+
+Some of the important points that you should be knowing about arrays are:
+
+1.An array is a collection of similar data in contiguous memory locations referred by the same name
+2.Can be used to store data of primitive as well as reference types
+3.Holds a fixed number of values, determined at the time of array declaration
+4.Array index always starts from zero
+5.The length attribute of an array can be used to get its size
+6.Once initialized, the size of an array cannot be changed

@@ -1,3 +1,12 @@
+/*
+● Optional<T> class to avoid NullPointerException and write more robust, readable, and null-safe code.
+● Optional is a container object which may or may not contain a non-null value.
+	● If a value is present, isPresent() returns true.
+	● If not, it’s empty, and calling get() will throw NoSuchElementException.
+
+*/
+
+
 import java.util.Optional;
 
 class Optional01of {

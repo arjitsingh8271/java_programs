@@ -3,9 +3,9 @@
     OR                     |
     XOR                    ^
     NOT                    ~ 
-    RIGHT SHIFT            >>
+    RIGHT SHIFT            >>		(remove a bin at the Right) or (/2)
     UNSIGNED RIGHT SHIFT   >>>
-    LEFT SHIFT             <<
+    LEFT SHIFT             <<		(add 0 to the Right) or (*2)
 
     AND:             OR:              XOR:             NOT:
         A   B  A&B      A   B  A|B       A   B  A^B        A   B 
